@@ -6,7 +6,7 @@
  * Run with: npm run images
  * Safe to re-run — already-downloaded files are skipped unless --force.
  */
-import { mkdir, writeFile, readFile, access } from "node:fs/promises";
+import { mkdir, writeFile, access } from "node:fs/promises";
 import { constants } from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
@@ -146,6 +146,10 @@ async function downloadAndOptimise(id, url) {
   const meta = await pipeline.metadata();
   const width = Math.min(meta.width ?? MAX_WIDTH, MAX_WIDTH);
 
+  if ((meta.width ?? 0) < 600 || (meta.height ?? 0) < 400) {
+    throw new Error(`source too small (${meta.width}x${meta.height})`);
+  }
+
   const out = await sharp(buf, { failOn: "none" })
     .rotate()
     .resize({ width, withoutEnlargement: true })
@@ -189,6 +193,18 @@ async function main() {
       continue;
     }
     const fileName = decodeURIComponent(url.split("?")[0].split("/").pop());
+
+    // Wikipedia lead images are sometimes locator maps or diagrams rather
+    // than photographs. SVG is always a diagram, so reject it outright.
+    if (/\.svgz?$/i.test(fileName)) {
+      failures.push({
+        id,
+        article,
+        reason: `lead image is a diagram, not a photo (${fileName})`,
+      });
+      continue;
+    }
+
     const credit = credits.get(fileName.replace(/ /g, "_"));
     if (!credit) {
       failures.push({ id, article, reason: `no Commons metadata for ${fileName}` });

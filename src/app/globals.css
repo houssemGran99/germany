@@ -22,6 +22,10 @@
   --c-forest: #1b3a2f;
   --c-forest-deep: #12261f;
   --c-forest-soft: #33604e;
+  /* Filled surfaces: always deep, in both themes, so text on top stays legible. */
+  --c-forest-block: #1b3a2f;
+  --c-forest-block-hover: #12261f;
+  --c-on-forest-block: #f3f1e9;
   --c-accent: #9a6b12;
   --c-accent-bright: #c9922b;
   --c-accent-soft: #f0e2c4;
@@ -58,6 +62,9 @@
   --c-forest: #7fb49b;
   --c-forest-deep: #0b1410;
   --c-forest-soft: #a8ceba;
+  --c-forest-block: #173027;
+  --c-forest-block-hover: #1f3f34;
+  --c-on-forest-block: #eef0ea;
   --c-accent: #e2ab44;
   --c-accent-bright: #f0be5f;
   --c-accent-soft: #3a2d12;
@@ -94,6 +101,9 @@
   --color-forest: var(--c-forest);
   --color-forest-deep: var(--c-forest-deep);
   --color-forest-soft: var(--c-forest-soft);
+  --color-forest-block: var(--c-forest-block);
+  --color-forest-block-hover: var(--c-forest-block-hover);
+  --color-on-forest-block: var(--c-on-forest-block);
   --color-accent: var(--c-accent);
   --color-accent-bright: var(--c-accent-bright);
   --color-accent-soft: var(--c-accent-soft);
@@ -186,6 +196,45 @@
 }
 
 @layer utilities {
+  /* Entry + scroll reveals.
+     The `js` class is added by ThemeScript before paint, so without
+     JavaScript every revealed element simply renders in its final,
+     visible state instead of staying at opacity 0. */
+  @keyframes sd-rise {
+    from {
+      opacity: 0;
+      transform: translateY(1.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .animate-rise {
+    animation: sd-rise 0.9s var(--ease-out-expo) both;
+  }
+
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(var(--reveal-y, 1.5rem));
+    transition:
+      opacity 0.7s var(--ease-out-expo),
+      transform 0.7s var(--ease-out-expo);
+    transition-delay: var(--reveal-delay, 0s);
+  }
+
+  .js .reveal[data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .js .reveal {
+      transform: none;
+    }
+  }
+
   .glass {
     background-color: var(--color-glass);
     backdrop-filter: saturate(180%) blur(16px);

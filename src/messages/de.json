@@ -1,0 +1,192 @@
+{
+  "site": {
+    "name": "Schönes Deutschland",
+    "tagline": "Entdecke die Seele Deutschlands",
+    "description": "Ein immersiver Führer durch Deutschlands Burgen, Alpen, Wälder, Küsten und historische Städte — 16 Reiseziele, richtig erzählt."
+  },
+  "nav": {
+    "home": "Start",
+    "destinations": "Reiseziele",
+    "regions": "Regionen",
+    "gallery": "Galerie",
+    "plan": "Reise planen",
+    "about": "Über",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "primary": "Hauptnavigation"
+  },
+  "common": {
+    "theme": "Erscheinungsbild",
+    "themeLight": "Hell",
+    "themeDark": "Dunkel",
+    "toggleTheme": "Zu {mode} Darstellung wechseln",
+    "language": "Sprache",
+    "switchLanguage": "Sprache wechseln",
+    "search": "Suche",
+    "searchShort": "Reiseziele suchen",
+    "close": "Schließen",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "loading": "Lädt",
+    "readMore": "Mehr lesen",
+    "viewAll": "Alle ansehen",
+    "backToTop": "Nach oben",
+    "scrollProgress": "Lesefortschritt",
+    "photoBy": "Foto: {author}",
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "hero": {
+    "eyebrow": "Eine visuelle Reise",
+    "headline": "Entdecke die Seele Deutschlands",
+    "subline": "Märchenschlösser über Alpenschluchten, Wälder, die das Licht schlucken, Kreidefelsen über kalter See und Städte, Stein für nummerierten Stein wiederaufgebaut.",
+    "cta": "Die Reise beginnen",
+    "ctaSecondary": "Karte erkunden",
+    "scrollHint": "Scrollen",
+    "slideLabel": "Bild {current} von {total}",
+    "slideshow": "Bildfolge im Titelbereich"
+  },
+  "featured": {
+    "eyebrow": "Hier beginnen",
+    "title": "Ausgewählte Reiseziele",
+    "description": "Neun Orte, die die Bandbreite des Landes zeigen — vom Gletschersee in den Alpen bis zum Buchenurwald an der Ostsee.",
+    "scrollLeft": "Nach links scrollen",
+    "scrollRight": "Nach rechts scrollen",
+    "list": "Ausgewählte Reiseziele"
+  },
+  "themes": {
+    "eyebrow": "Finde deine Reiseart",
+    "title": "Nach Thema entdecken",
+    "description": "Sechs Wege durch das Land. Wähle den, der zu der Reise passt, die du wirklich willst.",
+    "count": "{count, plural, =1 {# Ort} other {# Orte}}"
+  },
+  "seasons": {
+    "eyebrow": "Wann reisen",
+    "title": "Die beste Reisezeit",
+    "description": "Deutschland wechselt viermal im Jahr seinen Charakter. Das bietet jede Jahreszeit — und wo sie sich am besten zeigt.",
+    "selectSeason": "Jahreszeit wählen",
+    "bestFor": "Am besten für",
+    "seeDestinations": "{count} Reiseziele ansehen"
+  },
+  "facts": {
+    "eyebrow": "Wusstest du?",
+    "title": "Das Land in Zahlen"
+  },
+  "closing": {
+    "title": "Bereit für die Reise?",
+    "description": "Stelle aus den Orten, die dir aufgefallen sind, eine Route zusammen. Alles bleibt in deinem Browser — kein Konto, keine E-Mail.",
+    "cta": "Reise planen"
+  },
+  "destinations": {
+    "title": "Alle Reiseziele",
+    "description": "Sechzehn Orte in ganz Deutschland. Filtere nach Region, Thema oder der Jahreszeit, die am besten passt.",
+    "searchPlaceholder": "Reiseziele, Regionen, Themen suchen…",
+    "searchLabel": "Reiseziele suchen",
+    "filters": "Filter",
+    "filterRegion": "Region",
+    "filterTheme": "Thema",
+    "filterSeason": "Jahreszeit",
+    "all": "Alle",
+    "clear": "Filter zurücksetzen",
+    "resultCount": "{count, plural, =0 {Keine Orte} =1 {# Ort} other {# Orte}}",
+    "emptyTitle": "Zu diesen Filtern passt nichts",
+    "emptyBody": "Erweitere die Jahreszeit oder entferne einen Filter — irgendwo hier sind sechzehn Orte.",
+    "emptyAction": "Alle Filter zurücksetzen"
+  },
+  "detail": {
+    "story": "Die Geschichte",
+    "highlights": "Höhepunkte",
+    "bestSeason": "Beste Jahreszeit",
+    "gettingThere": "Anreise",
+    "onTheMap": "Auf der Karte",
+    "gallery": "Galerie",
+    "nearby": "In der Nähe",
+    "backToAll": "Alle Reiseziele",
+    "region": "Region",
+    "themes": "Themen",
+    "openGallery": "Bild {index} in der Lightbox öffnen",
+    "coordinates": "Koordinaten"
+  },
+  "trip": {
+    "save": "Zur Reise hinzufügen",
+    "saved": "Zur Reise hinzugefügt",
+    "remove": "Aus der Reise entfernen",
+    "title": "Reise planen",
+    "description": "Speichere Orte beim Stöbern — hier entsteht daraus eine Route. Nur in deinem Browser gespeichert.",
+    "empty": "Deine Reise ist leer",
+    "emptyBody": "Stöbere durch die Reiseziele und tippe bei allem, was dir gefällt, auf „Zur Reise hinzufügen“. Es erscheint hier als Route auf der Karte.",
+    "emptyAction": "Reiseziele ansehen",
+    "count": "{count, plural, =1 {# Station} other {# Stationen}}",
+    "clear": "Reise leeren",
+    "clearConfirm": "Alle gespeicherten Orte entfernen?",
+    "route": "Deine Route",
+    "totalDistance": "Rund {km} km Luftlinie insgesamt",
+    "moveUp": "Nach vorne",
+    "moveDown": "Nach hinten",
+    "stop": "Station {index}",
+    "routeMapLabel": "Karte deiner gespeicherten Route"
+  },
+  "regions": {
+    "title": "Regionen Deutschlands",
+    "description": "Neun Regionen, sechzehn Reiseziele. Erkunde die Karte — oder die Liste darunter, wenn du lieber liest.",
+    "mapLabel": "Interaktive Karte der Reiseziele in Deutschland. Die Liste darunter bietet eine tastaturzugängliche Alternative.",
+    "listTitle": "Nach Region stöbern",
+    "viewMap": "Karte",
+    "viewList": "Liste",
+    "inRegion": "{count, plural, =1 {# Reiseziel} other {# Reiseziele}}",
+    "loadingMap": "Karte lädt"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "description": "Alle Fotografien dieses Führers an einem Ort. Jede verlinkt auf ihre Quelle und Lizenz.",
+    "openImage": "{name} in der Lightbox öffnen",
+    "lightbox": "Bild-Lightbox",
+    "imageCount": "Bild {current} von {total}",
+    "viewDestination": "Zum Reiseziel"
+  },
+  "about": {
+    "title": "Über & Bildnachweise",
+    "intro": "Schönes Deutschland zeigt, wie sich ein Reiseführer anfühlen kann, wenn die Fotografie Raum und der Text Zeit bekommt. Es ist eine statische Website: kein Tracking, keine Konten, kein Backend.",
+    "photosTitle": "Fotografie",
+    "photosBody": "Alle Fotografien stammen von Wikimedia Commons und werden unter der auf ihrer Quellseite angegebenen Lizenz verwendet. Die Dateien werden lokal heruntergeladen und optimiert, statt verlinkt zu werden. Fotograf, Lizenz und Quelllink sind für jedes Bild unten aufgeführt.",
+    "dataTitle": "Datenquellen",
+    "dataBody": "Koordinaten, Regionszuschnitte und Sachangaben wurden aus Wikipedia, Wikimedia Commons, der UNESCO-Welterbeliste und Angaben der Deutschen Zentrale für Tourismus zusammengetragen. Die Kartenkacheln stammen von OpenStreetMap-Mitwirkenden.",
+    "techTitle": "Wie es gebaut ist",
+    "techBody": "Next.js mit App Router, TypeScript, Tailwind CSS, Framer Motion und Leaflet. Die Inhalte liegen in typisierten lokalen Datendateien; es gibt kein CMS und keine Datenbank.",
+    "license": "Lizenz",
+    "source": "Quelle",
+    "photographer": "Fotograf",
+    "usedFor": "Verwendet für"
+  },
+  "notFound": {
+    "title": "Abseits der Karte",
+    "description": "Diese Seite gibt es nicht — sechzehn echte Orte schon. Probiere einen davon.",
+    "home": "Zurück zum Start",
+    "destinations": "Alle Reiseziele"
+  },
+  "search": {
+    "title": "Suche",
+    "placeholder": "Reiseziele suchen…",
+    "hint": "{key} drücken zum Suchen",
+    "noResults": "Kein Reiseziel passt zu „{query}“",
+    "noResultsHint": "Versuche eine Region, ein Thema oder einen Teil eines Ortsnamens.",
+    "resultsLabel": "Suchergebnisse",
+    "open": "Suche öffnen",
+    "navigate": "zum Navigieren",
+    "select": "zum Auswählen",
+    "dismiss": "zum Schließen"
+  },
+  "seasonNames": {
+    "spring": "Frühling",
+    "summer": "Sommer",
+    "autumn": "Herbst",
+    "winter": "Winter"
+  },
+  "footer": {
+    "tagline": "Ein visueller Führer durch die Schönheit Deutschlands.",
+    "explore": "Entdecken",
+    "about": "Über",
+    "credits": "Bildnachweise",
+    "builtWith": "Gebaut mit Next.js. Fotografie von Wikimedia Commons.",
+    "backToTop": "Nach oben"
+  }
+}

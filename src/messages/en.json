@@ -1,0 +1,192 @@
+{
+  "site": {
+    "name": "Schönes Deutschland",
+    "tagline": "Discover the soul of Germany",
+    "description": "An immersive guide to Germany's castles, alps, forests, coasts and historic cities — 16 destinations, told properly."
+  },
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "regions": "Regions",
+    "gallery": "Gallery",
+    "plan": "Plan Your Trip",
+    "about": "About",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "primary": "Primary navigation"
+  },
+  "common": {
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "toggleTheme": "Switch to {mode} theme",
+    "language": "Language",
+    "switchLanguage": "Switch language",
+    "search": "Search",
+    "searchShort": "Search destinations",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "loading": "Loading",
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "backToTop": "Back to top",
+    "scrollProgress": "Reading progress",
+    "photoBy": "Photo: {author}",
+    "skipToContent": "Skip to content"
+  },
+  "hero": {
+    "eyebrow": "A visual journey",
+    "headline": "Discover the soul of Germany",
+    "subline": "Fairytale castles above Alpine gorges, forests that swallow the light, chalk cliffs over a cold sea, and cities rebuilt stone by numbered stone.",
+    "cta": "Begin the journey",
+    "ctaSecondary": "Explore the map",
+    "scrollHint": "Scroll",
+    "slideLabel": "Slide {current} of {total}",
+    "slideshow": "Hero slideshow"
+  },
+  "featured": {
+    "eyebrow": "Start here",
+    "title": "Featured destinations",
+    "description": "Nine places that show the range of the country, from a glacial lake in the Alps to old-growth beech forest on the Baltic.",
+    "scrollLeft": "Scroll left",
+    "scrollRight": "Scroll right",
+    "list": "Featured destinations"
+  },
+  "themes": {
+    "eyebrow": "Find your kind of trip",
+    "title": "Explore by theme",
+    "description": "Six ways through the country. Pick the one that matches the trip you actually want.",
+    "count": "{count, plural, =1 {# place} other {# places}}"
+  },
+  "seasons": {
+    "eyebrow": "When to go",
+    "title": "Best time to visit",
+    "description": "Germany changes character four times a year. Here is what each one offers — and where it shows best.",
+    "selectSeason": "Choose a season",
+    "bestFor": "Best for",
+    "seeDestinations": "See {count} destinations"
+  },
+  "facts": {
+    "eyebrow": "Did you know?",
+    "title": "The country in numbers"
+  },
+  "closing": {
+    "title": "Ready to go?",
+    "description": "Build a route from the places that caught your eye. Everything is saved in your browser — no account, no email.",
+    "cta": "Plan your trip"
+  },
+  "destinations": {
+    "title": "All destinations",
+    "description": "Sixteen places across Germany. Filter by region, theme or the season that suits them best.",
+    "searchPlaceholder": "Search destinations, regions, themes…",
+    "searchLabel": "Search destinations",
+    "filters": "Filters",
+    "filterRegion": "Region",
+    "filterTheme": "Theme",
+    "filterSeason": "Season",
+    "all": "All",
+    "clear": "Clear filters",
+    "resultCount": "{count, plural, =0 {No places} =1 {# place} other {# places}}",
+    "emptyTitle": "Nothing matches those filters",
+    "emptyBody": "Try widening the season or clearing a filter — there are sixteen places in here somewhere.",
+    "emptyAction": "Clear all filters"
+  },
+  "detail": {
+    "story": "The story",
+    "highlights": "Highlights",
+    "bestSeason": "Best season",
+    "gettingThere": "Getting there",
+    "onTheMap": "On the map",
+    "gallery": "Gallery",
+    "nearby": "Nearby places",
+    "backToAll": "All destinations",
+    "region": "Region",
+    "themes": "Themes",
+    "openGallery": "Open image {index} in the lightbox",
+    "coordinates": "Coordinates"
+  },
+  "trip": {
+    "save": "Save to my trip",
+    "saved": "Saved to my trip",
+    "remove": "Remove from my trip",
+    "title": "Plan your trip",
+    "description": "Save places as you browse and they collect here as a route. Stored in your browser only.",
+    "empty": "Your trip is empty",
+    "emptyBody": "Browse the destinations and tap “Save to my trip” on anything that looks good. It will show up here as a route on the map.",
+    "emptyAction": "Browse destinations",
+    "count": "{count, plural, =1 {# stop} other {# stops}}",
+    "clear": "Clear trip",
+    "clearConfirm": "Remove all saved places?",
+    "route": "Your route",
+    "totalDistance": "About {km} km point to point",
+    "moveUp": "Move earlier",
+    "moveDown": "Move later",
+    "stop": "Stop {index}",
+    "routeMapLabel": "Map of your saved route"
+  },
+  "regions": {
+    "title": "Regions of Germany",
+    "description": "Nine regions, sixteen destinations. Use the map to explore, or the list below if you would rather read.",
+    "mapLabel": "Interactive map of German destinations. Use the list below for a keyboard-accessible alternative.",
+    "listTitle": "Browse by region",
+    "viewMap": "Map",
+    "viewList": "List",
+    "inRegion": "{count, plural, =1 {# destination} other {# destinations}}",
+    "loadingMap": "Loading map"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "Every photograph in this guide, in one place. Each one links back to its source and licence.",
+    "openImage": "Open {name} in the lightbox",
+    "lightbox": "Image lightbox",
+    "imageCount": "Image {current} of {total}",
+    "viewDestination": "View destination"
+  },
+  "about": {
+    "title": "About & credits",
+    "intro": "Schönes Deutschland is a demonstration of what a travel guide can feel like when the photography is given room and the writing is given time. It is a static site: no tracking, no accounts, no backend.",
+    "photosTitle": "Photography",
+    "photosBody": "Every photograph comes from Wikimedia Commons and is used under the licence stated on its source page. Files are downloaded and optimised locally rather than hotlinked. Photographer, licence and source link are listed below for each image.",
+    "dataTitle": "Data sources",
+    "dataBody": "Coordinates, region boundaries and factual details were compiled from Wikipedia, Wikimedia Commons, the UNESCO World Heritage list and Germany's national tourist board. Map tiles are served by OpenStreetMap contributors.",
+    "techTitle": "How it is built",
+    "techBody": "Next.js with the App Router, TypeScript, Tailwind CSS, Framer Motion and Leaflet. Content lives in typed local data files; there is no CMS and no database.",
+    "license": "Licence",
+    "source": "Source",
+    "photographer": "Photographer",
+    "usedFor": "Used for"
+  },
+  "notFound": {
+    "title": "Off the map",
+    "description": "This page does not exist — but sixteen real places do. Try one of those instead.",
+    "home": "Back home",
+    "destinations": "See all destinations"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search destinations…",
+    "hint": "Press {key} to search",
+    "noResults": "No destinations match “{query}”",
+    "noResultsHint": "Try a region, a theme, or part of a place name.",
+    "resultsLabel": "Search results",
+    "open": "Open search",
+    "navigate": "to navigate",
+    "select": "to select",
+    "dismiss": "to close"
+  },
+  "seasonNames": {
+    "spring": "Spring",
+    "summer": "Summer",
+    "autumn": "Autumn",
+    "winter": "Winter"
+  },
+  "footer": {
+    "tagline": "A visual guide to the beauty of Germany.",
+    "explore": "Explore",
+    "about": "About",
+    "credits": "Photo credits",
+    "builtWith": "Built with Next.js. Photography from Wikimedia Commons.",
+    "backToTop": "Back to top"
+  }
+}

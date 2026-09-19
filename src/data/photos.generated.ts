@@ -51,13 +51,13 @@ export const generatedPhotos: Photo[] = [
     "id": "koenigssee-hero",
     "src": "/images/destinations/koenigssee-hero.jpg",
     "width": 2400,
-    "height": 3200,
-    "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZgCdMoBnABt2Qgt+uUq5M80A2cAA/pGV5N/T+7/Cm+xG/JCsba9xpcSmcxgBNLruT2Ak0PvgCmzfS0HwWXyvbmgxU8LJLnGFJ0NwSR7LPw5GbCGrZ9TEjbQ1Sib/xDzaeWaaQYe250I/ntAAAA==",
+    "height": 1568,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoAA4BaJbACdAEOglLEbsAAAPjIOm7TstwBAESy84KdCp/YnV/URHl+T8gXlE41TfFXoaSZ+1FV2bkrMxaxCQsnsMGoPzgAAA==",
     "credit": {
-      "author": "Mtt1734",
+      "author": "Jörg Braukmann",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigsee_in_Bayern.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbst_in_den_Berchtesgadener_Alpen.jpg",
       "source": "Wikimedia Commons"
     }
   },
@@ -79,13 +79,13 @@ export const generatedPhotos: Photo[] = [
     "id": "koenigssee-3",
     "src": "/images/destinations/koenigssee-3.jpg",
     "width": 2400,
-    "height": 1351,
-    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJYgCdADvZ8M2AAD+xeXEK81x4UEm8XL/kI3xtZ59k2zR1lrFAUHNz5lP6KP6+Oopwsb1u0otRykYZbwAAA==",
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZgCdMoBnABt2Qgt+uUq5M80A2cAA/pGV5N/T+7/Cm+xG/JCsba9xpcSmcxgBNLruT2Ak0PvgCmzfS0HwWXyvbmgxU8LJLnGFJ0NwSR7LPw5GbCGrZ9TEjbQ1Sib/xDzaeWaaQYe250I/ntAAAA==",
     "credit": {
-      "author": "Jörg Braukmann",
+      "author": "Mtt1734",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watzmann_von_Norden.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigsee_in_Bayern.jpg",
       "source": "Wikimedia Commons"
     }
   },
@@ -106,14 +106,14 @@ export const generatedPhotos: Photo[] = [
   {
     "id": "rothenburg-2",
     "src": "/images/destinations/rothenburg-2.jpg",
-    "width": 979,
-    "height": 1342,
-    "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwBACdASoQABYAPu1iqU2ppaQiMAgBMB2JQBYdhDwJvOw2giCyJCsOOIAA/lHlIjuboTXVu0X2GEwSLxzCoIrfRSzpjhRkRf3Jx0P83sMW6TQ4TYiQgfC6AVOAAA==",
+    "width": 1728,
+    "height": 2286,
+    "blurDataURL": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwAwCdASoQABUAPu1iqU2ppaQiMAgBMB2JYwBV0AebiQ763Agc5wVgAP7VFpEgAiLM7AooGOu8UxzBAx9WD6sfpUjER/fnoMRm2+s3SMxmPBgz4/NLNmI+95WDMMtPaIsoHu2HoWAjBrGsKX33udEg4DyWO6g/nXwySN3X/ZmH2DG2rsJqTpsAAAA=",
     "credit": {
-      "author": "NordNordWest",
-      "license": "CC BY-SA 3.0 de",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karte_Romantische_Stra%C3%9Fe_2016.png",
+      "author": "Mussklprozz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:N%C3%B6rdlingenDanielBlickS%C3%BCden.jpg",
       "source": "Wikimedia Commons"
     }
   },
@@ -162,14 +162,28 @@ export const generatedPhotos: Photo[] = [
   {
     "id": "bamberg-3",
     "src": "/images/destinations/bamberg-3.jpg",
-    "width": 2048,
-    "height": 1536,
-    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAwAA4BaJaACdAEPD2SAN5agAP4HtHN87eqGCCG/PDBdrQYnuMOCssO3zHj0ZTJZ1lLiGlPIJTYrWKZLqS6DdvnirYRi4M0MPPo07qroESUXFbzUZ404AAA=",
+    "width": 2161,
+    "height": 3525,
+    "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwAwCdASoQABoAPu1mq04ppaQiMAgBMB2JbACdMoAJ9CENWPOTUYsAAP7adsoqUh1kKMty6CYCjfLHZSJyvVEWWOORPSFCBww+PPQWw994BF3P/wQYfq+1IKOqIm7+2UJ1flBRxJ+6GnlkKvkChyfzmWBkWQs0DMhuugUnbLx1MKXwm2mhgSMUVFfNhiaWRl0dW/Nc4AA=",
     "credit": {
-      "author": "Moehri",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:M%C3%B6hrendorf_Wasserr%C3%A4der_Schmiedsrad.jpg",
+      "author": "Berthold Werner",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bamberg_Sankt_Michael_BW_12.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bamberg_Sankt_Michael_BW_12.JPG",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "black-forest-hero",
+    "src": "/images/destinations/black-forest-hero.jpg",
+    "width": 2400,
+    "height": 1428,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAkAA4BaJQBOj+ADA0jXjMAA/I/QR8OW39762j1pXZgWkMWOj0hltb42VWisuNwOQFDpcrBfAAAA",
+    "credit": {
+      "author": "MWolf89",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blick_vom_Hohfelsen.jpg",
       "source": "Wikimedia Commons"
     }
   },
@@ -188,6 +202,90 @@ export const generatedPhotos: Photo[] = [
     }
   },
   {
+    "id": "black-forest-3",
+    "src": "/images/destinations/black-forest-3.jpg",
+    "width": 2400,
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JYwAAUqUKK7Rx3e4LkW4AAP7pHKOKCT1qy/vIR7rcqTV7K4hx8T/g5wU6TMu8MbORGWux/JoEcUOvV5JIixspTa6O1UBFvvrBcHm68XVkZ7pOwFSUZb5lhIEthLFYAi7XZLIAAAA=",
+    "credit": {
+      "author": "MargaritaGagina",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triberg_waterfall.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "heidelberg-hero",
+    "src": "/images/destinations/heidelberg-hero.jpg",
+    "width": 2400,
+    "height": 1364,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAkAA4BaJQBOgCHczeb5gAD+75EIQ7RKwrNfDtcJcrkmTE9u3ZUOwrqBTxIT/HDGXLQjtV0zAxLIjfzcEYGAAAA=",
+    "credit": {
+      "author": "Motatcho",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heidelberg-2726936.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "heidelberg-2",
+    "src": "/images/destinations/heidelberg-2.jpg",
+    "width": 2400,
+    "height": 1266,
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAgAA4BaJYgAAudvNOOQp4AAzKNvtgQ6Xnj+CJjTu7vDnp46N8cE5tXwtdgA1CTLS29iMWfpiNzVAAA=",
+    "credit": {
+      "author": "Jörg Braukmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigstuhl,_Heidelberg,_U-17.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "heidelberg-3",
+    "src": "/images/destinations/heidelberg-3.jpg",
+    "width": 2304,
+    "height": 1130,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAgAA4BaJYwCdADhApeYAAD9mF6Lf8/vwbHHmI9LjaYWsNau1AR0Tz+tVjwcD1AaQO1O6HYICBIjQuhCBr2AAAA=",
+    "credit": {
+      "author": "BishkekRocks",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alte_Br%C3%BCcke_Heidelberg.JPG",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "lake-constance-hero",
+    "src": "/images/destinations/lake-constance-hero.jpg",
+    "width": 2400,
+    "height": 1800,
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAwAA4BaJYwCdAEPCRwX7H0nYADOOYJ3t976WiBYDpd9yLUApCjPCZYb1NvSLPiuhapnVf7J+Mse3eGMrmGjhmqNF5cUgOl5lM31cT2pYssAAAA=",
+    "credit": {
+      "author": "Win7sony",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ueberlingen_promenade_viewed_from_a_departing_ship.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "lake-constance-2",
+    "src": "/images/destinations/lake-constance-2.jpg",
+    "width": 2400,
+    "height": 1233,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAgAA4BaJagCdAEQ78k/FgD+oNZxxlxmL0m5hzzx6U2N6zRNDQ4Gg4t3tQ8WZEFe7dFwuHNd/AAA",
+    "credit": {
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aus_dem_Zeppelin_fotografiert,_Insel_Mainau,_Bodensee._10.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
     "id": "lake-constance-3",
     "src": "/images/destinations/lake-constance-3.jpg",
     "width": 1986,
@@ -198,6 +296,48 @@ export const generatedPhotos: Photo[] = [
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lindau_Insel_Luftbild3.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "rhine-valley-hero",
+    "src": "/images/destinations/rhine-valley-hero.jpg",
+    "width": 2400,
+    "height": 1550,
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoAA4BaJagCdH8AGA7nmSgAAM3zw+m3umpT9QHiUIjKC0YRgHovPdjlqrruWY8vhfbBCCJ7c9cDC5egvwFFJzak6ZWjgAA=",
+    "credit": {
+      "author": "Alexander Hoernigk",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:St.Goarshausen_Loreley_Burg_Katz_2016-03-27-17-13-57.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "rhine-valley-2",
+    "src": "/images/destinations/rhine-valley-2.jpg",
+    "width": 2400,
+    "height": 1136,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAgAA4BaJQBOgB0jup5y9AAA/uem7W+JODAWeFxxTN81Tx/lKgTddPxU8bodbyBtQuqfwyHkYmN2g+ZgAA==",
+    "credit": {
+      "author": "imehling",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loreley,_Rhine,_Castle_Katz.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "rhine-valley-3",
+    "src": "/images/destinations/rhine-valley-3.jpg",
+    "width": 2400,
+    "height": 1727,
+    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoQAAsAA4BaJZACdAYv1aCGAzIaAP62F1YbK6VcGaCzAtfno96x6+z3+Mr/kHPOdBHvy3VhRrbbcnHbs3g/kR8DSRwl6H+j27bmZU/OSVe5HOo/71/+VCoXCOBP64AA",
+    "credit": {
+      "author": "Jörg Braukmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burg_Pfalzgrafenstein_2017.jpg",
       "source": "Wikimedia Commons"
     }
   },
@@ -216,6 +356,76 @@ export const generatedPhotos: Photo[] = [
     }
   },
   {
+    "id": "moselle-2",
+    "src": "/images/destinations/moselle-2.jpg",
+    "width": 2400,
+    "height": 1613,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsAA4BaJQBOgB58Q1nkwgAA+OTPK5Yx3l2HUIRGMVWiCMOowRQ6sG8mCbPrwOv0CGgXEgSxqNG6NzEI+AAA",
+    "credit": {
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Moselle_in_Bernkastel-Kues_(view_from_the_southeast).jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "moselle-3",
+    "src": "/images/destinations/moselle-3.jpg",
+    "width": 2400,
+    "height": 3373,
+    "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoQABYAPu1iqU2ppaOiMAgBMB2JYwAAW+zoaWDXyqn41x+nQAD+6OKSsvPfRdCl3fALSOGq6FvWNcojX4qdTQiNO13q+qCb8yrxYWADHB4Ud9ytmRiH0oyoLNT8fv2HWd6JqOSYW0AAAA==",
+    "credit": {
+      "author": "Clementp.fr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_ch%C3%A2teau_d%27Eltz_(Burg_Eltz)_en_allemagne_(cropped).jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "cologne-hero",
+    "src": "/images/destinations/cologne-hero.jpg",
+    "width": 2400,
+    "height": 1325,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAkAA4BaJZQCdAELRogokAD7IuSjYAv2r93wPm5B6ABJVhxCSB4i6KuNAAAA",
+    "credit": {
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kranh%C3%A4user_Cologne,_April_2018_-01.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "cologne-2",
+    "src": "/images/destinations/cologne-2.jpg",
+    "width": 2000,
+    "height": 1452,
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAwAA4BaJYgCdAC3svMlPoAA/eOVe+6O0fApIWjcwolO8D0uXJg/+GeRB4Vu4ybQKKDarPaw/CZ5gFPQin2RZ2Ri/Ow1AAPBbz7/AAA=",
+    "credit": {
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hohenzollernbr%C3%BCcke_K%C3%B6ln_von_oben.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "cologne-3",
+    "src": "/images/destinations/cologne-3.jpg",
+    "width": 2400,
+    "height": 3895,
+    "blurDataURL": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwAwCdASoQABoALrV2u12jqampiYC0S2AE6ZQjADjAAqfqdaoIb6ggAP7nFUoLgqzxsZ6F0C33AIkrt4dJxZuPFfD/1RNR/PqCaMabNduQ1/uxvDHS6on9hkTFBVGOetCTJBeH2zr1R0vA1cSAhl/7Z4Cj78Txrml4jUzFvDh39zzfpzNvCpbb1imuDjNDKjmX6na38mecAA==",
+    "credit": {
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
     "id": "berlin-hero",
     "src": "/images/destinations/berlin-hero.jpg",
     "width": 1920,
@@ -226,6 +436,104 @@ export const generatedPhotos: Photo[] = [
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_abends.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "berlin-2",
+    "src": "/images/destinations/berlin-2.jpg",
+    "width": 2400,
+    "height": 1621,
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAsAA4BaJaACdGuAAqyxUyhMAAD93lPUOBAa5UqIipAddqb7tlfKQO/9CL50l7/9mCqiM0/E70PF+JghIfYQcioeYTP5AAA=",
+    "credit": {
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Museumsinsel_Fernsehturm.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "berlin-3",
+    "src": "/images/destinations/berlin-3.jpg",
+    "width": 2400,
+    "height": 1399,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAkAA4BaJQBOgCHQXdH+AAD8j+onGQHaT75ZLwj9ntRZcSmTYIJM9Oa2HeQppa46fzW3CD9uDXS4dVyKKDJsATry5VUmCgAAAA==",
+    "credit": {
+      "author": "File:Museumsinsel Berlin Juli 2021 1 (cropped).jpg : Kasa Fue derivative work: Georgfotoart",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museumsinsel_Berlin_Juli_2021_1_(cropped)_b.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "dresden-hero",
+    "src": "/images/destinations/dresden-hero.jpg",
+    "width": 2400,
+    "height": 1425,
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkAA4BaJaACdADhIHHWgADxxvpUFVQ/WjfGZ/lx8YXMDu6v2L9FyDaaR2nBXRlnY4n1i3MU5KZDQShTOF5dTvj5EpKgAAA=",
+    "credit": {
+      "author": "User:Kolossos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DD-Schloss-gp.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "dresden-2",
+    "src": "/images/destinations/dresden-2.jpg",
+    "width": 2048,
+    "height": 1366,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAsAA4BaJZgCdEf/gZhLOyKoAN2WRAUdIrbtWy1pB6N4sZD5VteVX1+7xhj2XEsihnCRBkIhPveCh+Z9ZC1xTg4v4AAA",
+    "credit": {
+      "author": "Avda",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dresden_-_Semperoper_-_2013.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "dresden-3",
+    "src": "/images/destinations/dresden-3.jpg",
+    "width": 2400,
+    "height": 3558,
+    "blurDataURL": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABgAPu1iqk2ppaQiMAgBMB2JagCdAB4/4lVzBrvIKpoA/oFGB0dvtVnMCvshWUKFJhJmXSgpnaojmMDKCK4jCWctz4YQybbFrx/LHSCyz/Wslo32trhAnmcvXbSqWLUdtj3otKt9ej4YsViI3h8n1eJpYhSSlo4AAA==",
+    "credit": {
+      "author": "Netopyr",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:100130_150006_Dresden_Frauenkirche_winter_blue_sky-2.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "saxon-switzerland-hero",
+    "src": "/images/destinations/saxon-switzerland-hero.jpg",
+    "width": 2400,
+    "height": 1600,
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAsAA4BaJQBOgA7y6luQAP4FoAtl6l5s4y6wHMx7neDGX+tTIa00CgpnjnSHHeTXvLtH0X6vRTogNbcnox85LH1adzLIh44kvQAA",
+    "credit": {
+      "author": "A.Savin",
+      "license": "FAL",
+      "licenseUrl": "http://artlibre.org/licence/lal/en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rathen_und_Elbsandsteingebirge_asv2022-08_img04.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "saxon-switzerland-2",
+    "src": "/images/destinations/saxon-switzerland-2.jpg",
+    "width": 2400,
+    "height": 1600,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAsAA4BaJbACdGuAAt2+PbupTAD+BVtOHHFr46qsk2Rn+0ST0/MdnScUPjyiMxFYwlHn8Tc3jzyTJ1zvzutuwAA=",
+    "credit": {
+      "author": "Merops",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lilienstein_Saxon_Switzerland.jpg",
       "source": "Wikimedia Commons"
     }
   },
@@ -244,8 +552,120 @@ export const generatedPhotos: Photo[] = [
     }
   },
   {
+    "id": "hamburg-hero",
+    "src": "/images/destinations/hamburg-hero.jpg",
+    "width": 2400,
+    "height": 1434,
+    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAQCdASoQAAoAA4BaJbACdH8AB2ZsAAD+3X6mINa//1xbrdS5z7VkaRoG6gKdBNLBzVml+SNoQRw+EZS/O8mKSec11gfVr3+T6j6yEv1Y4/6jMM/gfM0wOz++mUJB5/4bZQAA",
+    "credit": {
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Speicherstadt_abends.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "hamburg-2",
+    "src": "/images/destinations/hamburg-2.jpg",
+    "width": 1920,
+    "height": 1280,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAsAA4BaJQBOgBZrFhCIceAA/UbVrZwhHJmjDGv+VGZGdXD2lZNapqlwrS25qVvEnY9GcdDms70dcE/1sbZqgAA=",
+    "credit": {
+      "author": "Evgenii Salganik",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elbphilharmonie_2025.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "hamburg-3",
+    "src": "/images/destinations/hamburg-3.jpg",
+    "width": 2400,
+    "height": 1600,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAsAA4BaJZwAAlmFDhWAAP6QnmIzhoiS42h7Lvr3bUGtqsH4abKM7O7BvXxaN+ALxm5C2C4wlFwN9VT9TFbUWWELAIAA",
+    "credit": {
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamburg,_Landungsbr%C3%BCcken_--_2016_--_3131-7.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "ruegen-hero",
+    "src": "/images/destinations/ruegen-hero.jpg",
+    "width": 2400,
+    "height": 1656,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsAA4BaJZQCsADp5colLIAA/t9+cGBexBBT9kX1pC4D6jANualqe7L2NhLpTYr1rmv2bSWwPhFmu7I4gI2jlfv+oAAA",
+    "credit": {
+      "author": "Moahim",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_-_Nationalpark_Jasmund_-_03.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "ruegen-2",
+    "src": "/images/destinations/ruegen-2.jpg",
+    "width": 1600,
+    "height": 1200,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwAA4BaJbACdAD0L9ZeaQAA/o04AGHbobF3hrRCutRZAOPVFa/QiEUNkyzsQPwP9y/+Q84Hsi6peir3lMjcGsR2UZHKy2AAAA==",
+    "credit": {
+      "author": "Haloorange",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Insel_R%C3%BCgen-Strand_von_Sellin.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Insel_R%C3%BCgen-Strand_von_Sellin.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "ruegen-3",
+    "src": "/images/destinations/ruegen-3.jpg",
+    "width": 2400,
+    "height": 1354,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAkAA4BaJQBOgCKUJrKYAAD+4+mUNFuQHqgwTwvnvea4VrKjxkurCEZwxvPC0s97LwAA",
+    "credit": {
+      "author": "Klugschnacker",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Binz_(2011-05-21)_05.JPG",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
     "id": "harz-hero",
     "src": "/images/destinations/harz-hero.jpg",
+    "width": 1500,
+    "height": 1000,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAsAA4BaJQBOgCHcSZ+aMwAA/lIYnS3ta9ytRGPpePQXAN0j+5BRSdblGVlVGsQhUnrkPFZSiPYTOwAAAA==",
+    "credit": {
+      "author": "Andreas Tille",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WernigerodeCastleWinter.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "harz-2",
+    "src": "/images/destinations/harz-2.jpg",
+    "width": 2400,
+    "height": 1200,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAgAA4BaJQBOgCIKAB3vgAD8jC6Fc1EE6NTIg948A1DU80LOmlRKmiAonYP+66jpGyzFfXWPwwAA",
+    "credit": {
+      "author": "A.Savin",
+      "license": "FAL",
+      "licenseUrl": "http://artlibre.org/licence/lal/en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quedlinburg_asv2018-10_img11_Markt.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "harz-3",
+    "src": "/images/destinations/harz-3.jpg",
     "width": 786,
     "height": 544,
     "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAwAgCdASoQAAsAA4BaJZgCdGuAAs28Qthl8AD93itJImZ+jMmgFZ/DQrxU/qgOgfRJFO95j/dFZ9dcThTethbHIOAAAA==",

@@ -1,0 +1,5 @@
+.next
+node_modules
+public/images
+src/data/photos.generated.ts
+package-lock.json
