@@ -35,7 +35,10 @@ export function FeaturedScroller({ cards }: { cards: CardData[] }) {
   function scrollBy(direction: -1 | 1) {
     const el = ref.current;
     if (!el) return;
-    el.scrollBy({ left: direction * Math.round(el.clientWidth * 0.8), behavior: "smooth" });
+    el.scrollBy({
+      left: direction * Math.round(el.clientWidth * 0.8),
+      behavior: "smooth",
+    });
   }
 
   return (
@@ -99,8 +102,8 @@ function ScrollButton({
       disabled={disabled}
       aria-label={label}
       className={cn(
-        "inline-flex size-11 items-center justify-center rounded-full border border-line",
-        "bg-surface text-ink transition-all duration-300 hover:border-line-strong hover:bg-surface-2",
+        "border-line inline-flex size-11 items-center justify-center rounded-full border",
+        "bg-surface text-ink hover:border-line-strong hover:bg-surface-2 transition-all duration-300",
         "disabled:pointer-events-none disabled:opacity-35",
       )}
     >

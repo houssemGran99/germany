@@ -43,17 +43,26 @@ export function TripPlanner({ cards }: { cards: DestinationCard[] }) {
 
   if (stops.length === 0) {
     return (
-      <div className="rounded-4xl border border-dashed border-line-strong px-6 py-20 text-center sm:py-28">
+      <div className="border-line-strong rounded-4xl border border-dashed px-6 py-20 text-center sm:py-28">
         <span
           aria-hidden="true"
-          className="mx-auto mb-6 grid size-14 place-items-center rounded-full bg-surface-2 text-ink-faint"
+          className="bg-surface-2 text-ink-faint mx-auto mb-6 grid size-14 place-items-center rounded-full"
         >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
             <path d="M6 4.5h12v15l-6-4.2-6 4.2z" />
           </svg>
         </span>
         <p className="font-serif text-2xl">{t("empty")}</p>
-        <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink-muted">
+        <p className="text-ink-muted mx-auto mt-3 max-w-md text-sm leading-relaxed">
           {t("emptyBody")}
         </p>
         <LinkButton href="/destinations" className="mt-8">
@@ -68,9 +77,11 @@ export function TripPlanner({ cards }: { cards: DestinationCard[] }) {
       <div>
         <div className="mb-5 flex items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-medium text-ink">{t("count", { count: stops.length })}</p>
+            <p className="text-ink text-sm font-medium">
+              {t("count", { count: stops.length })}
+            </p>
             {stops.length > 1 && (
-              <p className="mt-1 text-xs text-ink-muted">
+              <p className="text-ink-muted mt-1 text-xs">
                 {t("totalDistance", { km: distance })}
               </p>
             )}
@@ -96,11 +107,11 @@ export function TripPlanner({ cards }: { cards: DestinationCard[] }) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, x: reduce ? 0 : -16 }}
                 transition={{ duration: reduce ? 0.12 : 0.35, ease: [0.16, 1, 0.3, 1] }}
-                className="flex items-center gap-4 rounded-3xl border border-line bg-surface p-3 shadow-soft-sm"
+                className="border-line bg-surface shadow-soft-sm flex items-center gap-4 rounded-3xl border p-3"
               >
                 <span
                   aria-hidden="true"
-                  className="grid size-8 shrink-0 place-items-center rounded-full bg-accent text-xs font-bold text-on-accent"
+                  className="bg-accent text-on-accent grid size-8 shrink-0 place-items-center rounded-full text-xs font-bold"
                 >
                   {i + 1}
                 </span>
@@ -109,7 +120,7 @@ export function TripPlanner({ cards }: { cards: DestinationCard[] }) {
                   href={`/destinations/${stop.slug}`}
                   className="flex min-w-0 flex-1 items-center gap-4"
                 >
-                  <span className="relative size-16 shrink-0 overflow-hidden rounded-2xl bg-surface-2">
+                  <span className="bg-surface-2 relative size-16 shrink-0 overflow-hidden rounded-2xl">
                     <SmartImage
                       photoId={stop.photoId}
                       alt={stop.name}
@@ -119,8 +130,10 @@ export function TripPlanner({ cards }: { cards: DestinationCard[] }) {
                   </span>
                   <span className="min-w-0">
                     <span className="sr-only">{t("stop", { index: i + 1 })}: </span>
-                    <span className="block truncate font-serif text-lg">{stop.name}</span>
-                    <span className="block truncate text-xs text-ink-muted">
+                    <span className="block truncate font-serif text-lg">
+                      {stop.name}
+                    </span>
+                    <span className="text-ink-muted block truncate text-xs">
                       {stop.regionName}
                     </span>
                   </span>
@@ -153,7 +166,7 @@ export function TripPlanner({ cards }: { cards: DestinationCard[] }) {
       </div>
 
       <div className="lg:sticky lg:top-24">
-        <h2 className="mb-4 text-2xs font-semibold tracking-[0.2em] text-ink-faint uppercase">
+        <h2 className="text-2xs text-ink-faint mb-4 font-semibold tracking-[0.2em] uppercase">
           {t("route")}
         </h2>
         <MapLoader
@@ -192,8 +205,8 @@ function IconButton({
       disabled={disabled}
       aria-label={label}
       className={cn(
-        "inline-flex size-9 items-center justify-center rounded-full text-ink-faint",
-        "transition-colors hover:bg-surface-2 hover:text-ink",
+        "text-ink-faint inline-flex size-9 items-center justify-center rounded-full",
+        "hover:bg-surface-2 hover:text-ink transition-colors",
         "disabled:pointer-events-none disabled:opacity-30",
       )}
     >
@@ -204,7 +217,17 @@ function IconButton({
 
 function ChevronIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      className={className}
+      width="15"
+      height="15"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="m6 15 6-6 6 6" />
     </svg>
   );
@@ -212,7 +235,15 @@ function ChevronIcon({ className }: { className?: string }) {
 
 function CloseIcon() {
   return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+    >
       <path d="M6 6l12 12M18 6L6 18" />
     </svg>
   );

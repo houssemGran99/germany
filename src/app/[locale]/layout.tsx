@@ -92,15 +92,23 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <ThemeScript />
-        <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#0e1512" media="(prefers-color-scheme: dark)" />
+        <meta
+          name="theme-color"
+          content="#f7f4ee"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#0e1512"
+          media="(prefers-color-scheme: dark)"
+        />
       </head>
       <body className={`${serif.variable} ${sans.variable} antialiased`}>
         <NextIntlClientProvider>
           <TripProvider>
             <a
               href="#main"
-              className="sr-only rounded-full bg-forest-block px-5 py-3 text-on-forest-block focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100"
+              className="bg-forest-block text-on-forest-block sr-only rounded-full px-5 py-3 focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100"
             >
               {t("skipToContent")}
             </a>

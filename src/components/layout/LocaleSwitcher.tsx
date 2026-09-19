@@ -49,7 +49,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
             lang={localeMeta[locale].hrefLang}
             title={localeMeta[locale].native}
             className={cn(
-              "min-w-11 rounded-full px-3 py-1.5 text-2xs font-semibold tracking-widest uppercase",
+              "text-2xs min-w-11 rounded-full px-3 py-1.5 font-semibold tracking-widest uppercase",
               "transition-colors duration-300",
               isActive
                 ? "bg-current/12 text-current"

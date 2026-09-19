@@ -40,13 +40,23 @@ export function MagneticButton({ href, children, className }: Props) {
         onPointerMove={onMove}
         onPointerLeave={() => setOffset({ x: 0, y: 0 })}
         className={cn(
-          "inline-flex min-h-14 items-center gap-3 rounded-full bg-accent px-9 text-base font-medium text-on-accent",
-          "shadow-soft-lg transition-colors duration-300 hover:bg-accent-bright",
+          "bg-accent text-on-accent inline-flex min-h-14 items-center gap-3 rounded-full px-9 text-base font-medium",
+          "shadow-soft-lg hover:bg-accent-bright transition-colors duration-300",
           className,
         )}
       >
         {children}
-        <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          aria-hidden="true"
+          width="17"
+          height="17"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.9"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M5 12h14M13 6l6 6-6 6" />
         </svg>
       </Link>

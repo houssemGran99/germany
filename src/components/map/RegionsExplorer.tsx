@@ -32,7 +32,7 @@ export function RegionsExplorer({ markers, groups }: Props) {
       <div
         role="group"
         aria-label={t("title")}
-        className="mb-6 inline-flex rounded-full border border-line bg-surface p-1 lg:hidden"
+        className="border-line bg-surface mb-6 inline-flex rounded-full border p-1 lg:hidden"
       >
         {(["map", "list"] as const).map((option) => (
           <button
@@ -49,7 +49,7 @@ export function RegionsExplorer({ markers, groups }: Props) {
               <motion.span
                 layoutId="region-view-pill"
                 transition={{ duration: reduce ? 0 : 0.35, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 rounded-full bg-forest-block"
+                className="bg-forest-block absolute inset-0 rounded-full"
               />
             )}
             <span className="relative">
@@ -77,8 +77,10 @@ export function RegionsExplorer({ markers, groups }: Props) {
           {groups.map((group) => (
             <li key={group.id}>
               <h3 className="font-serif text-xl">{group.name}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-muted">{group.blurb}</p>
-              <p className="mt-3 text-2xs font-semibold tracking-[0.18em] text-ink-faint uppercase">
+              <p className="text-ink-muted mt-2 text-sm leading-relaxed">
+                {group.blurb}
+              </p>
+              <p className="text-2xs text-ink-faint mt-3 font-semibold tracking-[0.18em] uppercase">
                 {t("inRegion", { count: group.destinations.length })}
               </p>
               <ul className="mt-4 space-y-1">
@@ -86,11 +88,11 @@ export function RegionsExplorer({ markers, groups }: Props) {
                   <li key={destination.slug}>
                     <Link
                       href={`/destinations/${destination.slug}`}
-                      className="flex min-h-11 items-center gap-2 text-sm text-ink transition-colors hover:text-accent"
+                      className="text-ink hover:text-accent flex min-h-11 items-center gap-2 text-sm transition-colors"
                     >
                       <span
                         aria-hidden="true"
-                        className="size-1.5 shrink-0 rounded-full bg-accent"
+                        className="bg-accent size-1.5 shrink-0 rounded-full"
                       />
                       {destination.name}
                     </Link>

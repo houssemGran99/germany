@@ -19,7 +19,7 @@ export function ScrollProgress() {
       aria-hidden="true"
       title={t("scrollProgress")}
       style={{ scaleX: reduce ? scrollYProgress : scaleX }}
-      className="pointer-events-none fixed inset-x-0 top-0 z-60 h-[3px] origin-left bg-linear-to-r from-accent to-accent-bright"
+      className="from-accent to-accent-bright pointer-events-none fixed inset-x-0 top-0 z-60 h-[3px] origin-left bg-linear-to-r"
     />
   );
 }

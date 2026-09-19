@@ -16,7 +16,7 @@ export async function ClosingCTA({ photoId, alt }: { photoId: string; alt: strin
           sizes="100vw"
           className="h-full w-full object-cover"
         />
-        <div aria-hidden="true" className="absolute inset-0 bg-forest-deep/72" />
+        <div aria-hidden="true" className="bg-forest-deep/72 absolute inset-0" />
       </div>
 
       <Container size="narrow" className="py-24 text-center sm:py-36">

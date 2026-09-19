@@ -33,19 +33,20 @@ export function Section({
           <div
             className={cn(
               "mb-10 flex flex-col gap-6 sm:mb-14 lg:flex-row lg:items-end lg:justify-between",
-              align === "center" && "items-center text-center lg:flex-col lg:items-center",
+              align === "center" &&
+                "items-center text-center lg:flex-col lg:items-center",
               headerClassName,
             )}
           >
             <div className={cn("max-w-2xl", align === "center" && "mx-auto")}>
               {eyebrow && (
-                <p className="mb-3 text-2xs font-semibold tracking-[0.2em] text-accent uppercase">
+                <p className="text-2xs text-accent mb-3 font-semibold tracking-[0.2em] uppercase">
                   {eyebrow}
                 </p>
               )}
               {title && <h2 className="text-3xl leading-[1.08]">{title}</h2>}
               {description && (
-                <p className="mt-4 text-base leading-relaxed text-ink-muted">
+                <p className="text-ink-muted mt-4 text-base leading-relaxed">
                   {description}
                 </p>
               )}

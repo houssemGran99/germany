@@ -5,7 +5,10 @@ import path from "node:path";
 const src = readFileSync("src/data/photos.generated.ts", "utf8");
 const photos = JSON.parse(src.slice(src.indexOf("= [") + 2, src.lastIndexOf("]") + 1));
 
-const COLS = 6, W = 210, H = 150, PAD = 4;
+const COLS = 6,
+  W = 210,
+  H = 150,
+  PAD = 4;
 const rows = Math.ceil(photos.length / COLS);
 
 const tiles = await Promise.all(
@@ -33,6 +36,6 @@ await sharp({
 
 photos.forEach((p, i) => {
   if (i % COLS === 0) process.stdout.write(`\nrow ${Math.floor(i / COLS) + 1}: `);
-  process.stdout.write(`${i % COLS + 1}.${p.id}  `);
+  process.stdout.write(`${(i % COLS) + 1}.${p.id}  `);
 });
 console.log();

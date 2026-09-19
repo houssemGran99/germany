@@ -87,7 +87,7 @@ export function Hero({ slides }: { slides: HeroSlide[] }) {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-bg to-transparent sm:h-40"
+        className="from-bg absolute inset-x-0 bottom-0 h-20 bg-linear-to-t to-transparent sm:h-40"
       />
 
       <motion.div
@@ -96,7 +96,7 @@ export function Hero({ slides }: { slides: HeroSlide[] }) {
       >
         <p
           style={{ animationDelay: "0.1s" }}
-          className="animate-rise mb-5 text-2xs font-semibold tracking-[0.3em] text-white/75 uppercase"
+          className="animate-rise text-2xs mb-5 font-semibold tracking-[0.3em] text-white/75 uppercase"
         >
           {t("eyebrow")}
         </p>
@@ -155,7 +155,7 @@ export function Hero({ slides }: { slides: HeroSlide[] }) {
       <motion.span
         aria-hidden="true"
         style={reduce ? undefined : { opacity: contentOpacity }}
-        className="absolute right-4 bottom-6 hidden items-center gap-2 text-2xs tracking-[0.25em] text-white/60 uppercase sm:right-6 sm:flex lg:right-10"
+        className="text-2xs absolute right-4 bottom-6 hidden items-center gap-2 tracking-[0.25em] text-white/60 uppercase sm:right-6 sm:flex lg:right-10"
       >
         {t("scrollHint")}
         <motion.span

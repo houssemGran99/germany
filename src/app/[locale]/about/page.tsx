@@ -39,7 +39,7 @@ export default async function AboutPage({ params }: PageProps) {
     <Container size="default" className="pt-30 pb-24 sm:pt-36">
       <header className="max-w-2xl">
         <h1 className="text-4xl leading-[1.05]">{t("title")}</h1>
-        <p className="mt-6 text-lg leading-relaxed text-ink-muted">{t("intro")}</p>
+        <p className="text-ink-muted mt-6 text-lg leading-relaxed">{t("intro")}</p>
       </header>
 
       <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:gap-14">
@@ -50,7 +50,7 @@ export default async function AboutPage({ params }: PageProps) {
 
       <section id="credits" className="mt-20 scroll-mt-24">
         <h2 className="text-2xl">{t("photosTitle")}</h2>
-        <ul className="mt-8 divide-y divide-line border-y border-line">
+        <ul className="divide-line border-line mt-8 divide-y border-y">
           {allPhotos.map((photo) => {
             const used = usedBy.get(photo.id);
             return (
@@ -58,7 +58,7 @@ export default async function AboutPage({ params }: PageProps) {
                 key={photo.id}
                 className="flex flex-col gap-4 py-5 sm:flex-row sm:items-center sm:gap-6"
               >
-                <span className="relative size-20 shrink-0 overflow-hidden rounded-2xl bg-surface-2 sm:size-16">
+                <span className="bg-surface-2 relative size-20 shrink-0 overflow-hidden rounded-2xl sm:size-16">
                   <Image
                     src={photo.src}
                     alt=""
@@ -71,16 +71,16 @@ export default async function AboutPage({ params }: PageProps) {
                 </span>
 
                 <div className="min-w-0 flex-1">
-                  <p className="text-sm font-medium text-ink">
+                  <p className="text-ink text-sm font-medium">
                     {t("photographer")}: {photo.credit.author}
                   </p>
-                  <p className="mt-1 text-xs text-ink-muted">
+                  <p className="text-ink-muted mt-1 text-xs">
                     {t("license")}:{" "}
                     <a
                       href={photo.credit.licenseUrl}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="underline underline-offset-3 hover:text-ink"
+                      className="hover:text-ink underline underline-offset-3"
                     >
                       {photo.credit.license}
                     </a>
@@ -89,7 +89,7 @@ export default async function AboutPage({ params }: PageProps) {
                       href={photo.credit.sourceUrl}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="underline underline-offset-3 hover:text-ink"
+                      className="hover:text-ink underline underline-offset-3"
                     >
                       {photo.credit.source}
                     </a>
@@ -97,11 +97,11 @@ export default async function AboutPage({ params }: PageProps) {
                 </div>
 
                 {used && (
-                  <p className="shrink-0 text-xs text-ink-faint">
+                  <p className="text-ink-faint shrink-0 text-xs">
                     {t("usedFor")}:{" "}
                     <Link
                       href={`/destinations/${used.slug}`}
-                      className="underline underline-offset-3 hover:text-ink"
+                      className="hover:text-ink underline underline-offset-3"
                     >
                       {used.name}
                     </Link>
@@ -119,10 +119,10 @@ export default async function AboutPage({ params }: PageProps) {
 function Prose({ title, body }: { title: string; body: string }) {
   return (
     <section>
-      <h2 className="text-2xs font-semibold tracking-[0.2em] text-accent uppercase">
+      <h2 className="text-2xs text-accent font-semibold tracking-[0.2em] uppercase">
         {title}
       </h2>
-      <p className="mt-4 text-sm leading-[1.8] text-ink-muted">{body}</p>
+      <p className="text-ink-muted mt-4 text-sm leading-[1.8]">{body}</p>
     </section>
   );
 }

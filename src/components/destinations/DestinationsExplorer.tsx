@@ -77,7 +77,7 @@ export function DestinationsExplorer({ cards, regions, themes, seasons }: Props)
     <>
       <div className="mb-8 space-y-6">
         <div className="relative">
-          <SearchIcon className="pointer-events-none absolute top-1/2 left-5 -translate-y-1/2 text-ink-faint" />
+          <SearchIcon className="text-ink-faint pointer-events-none absolute top-1/2 left-5 -translate-y-1/2" />
           <input
             type="search"
             value={query}
@@ -85,8 +85,8 @@ export function DestinationsExplorer({ cards, regions, themes, seasons }: Props)
             placeholder={t("searchPlaceholder")}
             aria-label={t("searchLabel")}
             className={cn(
-              "h-14 w-full rounded-full border border-line bg-surface pr-5 pl-13 text-base",
-              "shadow-soft-sm transition-colors outline-none placeholder:text-ink-faint",
+              "border-line bg-surface h-14 w-full rounded-full border pr-5 pl-13 text-base",
+              "shadow-soft-sm placeholder:text-ink-faint transition-colors outline-none",
               "focus:border-accent",
             )}
           />
@@ -116,8 +116,8 @@ export function DestinationsExplorer({ cards, regions, themes, seasons }: Props)
           />
         </div>
 
-        <div className="flex items-center justify-between gap-4 border-t border-line pt-5">
-          <p aria-live="polite" className="text-sm text-ink-muted">
+        <div className="border-line flex items-center justify-between gap-4 border-t pt-5">
+          <p aria-live="polite" className="text-ink-muted text-sm">
             {t("resultCount", { count: results.length })}
           </p>
           {hasFilters && (
@@ -150,9 +150,9 @@ export function DestinationsExplorer({ cards, regions, themes, seasons }: Props)
           </AnimatePresence>
         </motion.ul>
       ) : (
-        <div className="rounded-3xl border border-dashed border-line-strong px-6 py-20 text-center">
+        <div className="border-line-strong rounded-3xl border border-dashed px-6 py-20 text-center">
           <p className="font-serif text-2xl">{t("emptyTitle")}</p>
-          <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-ink-muted">
+          <p className="text-ink-muted mx-auto mt-3 max-w-sm text-sm leading-relaxed">
             {t("emptyBody")}
           </p>
           <Button className="mt-8" onClick={clearAll}>
@@ -179,7 +179,7 @@ function FilterRow({
 }) {
   return (
     <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-      <span className="shrink-0 text-2xs font-semibold tracking-[0.18em] text-ink-faint uppercase sm:w-24">
+      <span className="text-2xs text-ink-faint shrink-0 font-semibold tracking-[0.18em] uppercase sm:w-24">
         {label}
       </span>
       <div
@@ -232,7 +232,16 @@ function Chip({
 
 function SearchIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+    <svg
+      className={className}
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    >
       <circle cx="11" cy="11" r="7" />
       <path d="m20 20-3.5-3.5" />
     </svg>

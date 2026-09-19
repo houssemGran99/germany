@@ -16,7 +16,7 @@ export function Tag({ tone = "neutral", size = "sm", className, ...props }: Prop
     <span
       className={cn(
         "inline-flex items-center gap-1 rounded-full border font-medium whitespace-nowrap",
-        size === "sm" ? "px-2.5 py-1 text-2xs" : "px-3 py-1.5 text-xs",
+        size === "sm" ? "text-2xs px-2.5 py-1" : "px-3 py-1.5 text-xs",
         tones[tone],
         className,
       )}

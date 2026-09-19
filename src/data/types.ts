@@ -3,13 +3,7 @@ import type { Locale } from "@/i18n/routing";
 /** A value that exists in every supported locale. */
 export type Localized<T = string> = Record<Locale, T>;
 
-export type ThemeId =
-  | "castles"
-  | "alps"
-  | "forests"
-  | "cities"
-  | "coasts"
-  | "wine";
+export type ThemeId = "castles" | "alps" | "forests" | "cities" | "coasts" | "wine";
 
 export type SeasonId = "spring" | "summer" | "autumn" | "winter";
 

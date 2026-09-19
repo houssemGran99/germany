@@ -51,7 +51,7 @@ export function PhotoGrid({ images, layout = "masonry", className }: Props) {
               type="button"
               onClick={() => setIndex(i)}
               aria-label={t("openImage", { name: image.alt })}
-              className="group relative block w-full overflow-hidden rounded-2xl bg-surface-2 shadow-soft-sm transition-shadow duration-500 hover:shadow-soft-lg"
+              className="group bg-surface-2 shadow-soft-sm hover:shadow-soft-lg relative block w-full overflow-hidden rounded-2xl transition-shadow duration-500"
             >
               <Image
                 src={image.src}

@@ -107,16 +107,18 @@ export default function MapView({
             keyboard
           >
             <Popup>
-              <span className="block text-2xs font-semibold tracking-[0.15em] text-ink-faint uppercase">
+              <span className="text-2xs text-ink-faint block font-semibold tracking-[0.15em] uppercase">
                 {marker.regionName}
               </span>
-              <span className="mt-1 block font-serif text-base text-ink">
+              <span className="text-ink mt-1 block font-serif text-base">
                 {marker.name}
               </span>
-              <span className="mt-1 block text-xs text-ink-muted">{marker.tagline}</span>
+              <span className="text-ink-muted mt-1 block text-xs">
+                {marker.tagline}
+              </span>
               <Link
                 href={`/destinations/${marker.slug}`}
-                className="mt-2.5 inline-flex items-center gap-1 text-xs font-medium text-accent underline underline-offset-3"
+                className="text-accent mt-2.5 inline-flex items-center gap-1 text-xs font-medium underline underline-offset-3"
               >
                 {t("viewDestination")}
                 <span aria-hidden="true">→</span>

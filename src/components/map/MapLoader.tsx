@@ -14,9 +14,9 @@ const Map = dynamic(() => import("./MapView"), {
 
 function MapSkeleton() {
   return (
-    <div className="grid h-full w-full place-items-center bg-surface-2">
-      <span className="flex items-center gap-2 text-sm text-ink-faint">
-        <span className="size-2 animate-pulse rounded-full bg-accent motion-reduce:animate-none" />
+    <div className="bg-surface-2 grid h-full w-full place-items-center">
+      <span className="text-ink-faint flex items-center gap-2 text-sm">
+        <span className="bg-accent size-2 animate-pulse rounded-full motion-reduce:animate-none" />
         <MapLoadingLabel />
       </span>
     </div>
@@ -28,12 +28,9 @@ function MapLoadingLabel() {
   return <>{t("loadingMap")}</>;
 }
 
-export function MapLoader({
-  className,
-  ...props
-}: ComponentProps<typeof MapView>) {
+export function MapLoader({ className, ...props }: ComponentProps<typeof MapView>) {
   return (
-    <div className={cn("overflow-hidden rounded-3xl border border-line", className)}>
+    <div className={cn("border-line overflow-hidden rounded-3xl border", className)}>
       <Map {...props} className="h-full w-full" />
     </div>
   );

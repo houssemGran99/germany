@@ -34,7 +34,11 @@ export function SmartImage({
       <div
         role="img"
         aria-label={alt}
-        className={cn("gradient-placeholder", fill ? "absolute inset-0" : "w-full", className)}
+        className={cn(
+          "gradient-placeholder",
+          fill ? "absolute inset-0" : "w-full",
+          className,
+        )}
       />
     );
   }
@@ -47,9 +51,7 @@ export function SmartImage({
       priority={priority}
       placeholder="blur"
       blurDataURL={photo.blurDataURL}
-      {...(fill
-        ? { fill: true }
-        : { width: photo.width, height: photo.height })}
+      {...(fill ? { fill: true } : { width: photo.width, height: photo.height })}
       className={cn("object-cover", imgClassName, className)}
     />
   );

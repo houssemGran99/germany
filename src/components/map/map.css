@@ -8,8 +8,7 @@
 /* OSM has no dark raster style, so invert the tiles only. Markers, popups
    and controls live in other panes and keep their own colours. */
 [data-map-theme="dark"] .leaflet-tile-pane {
-  filter: invert(1) hue-rotate(180deg) brightness(0.92) contrast(0.86)
-    saturate(0.55);
+  filter: invert(1) hue-rotate(180deg) brightness(0.92) contrast(0.86) saturate(0.55);
 }
 
 .sd-pin-wrapper {

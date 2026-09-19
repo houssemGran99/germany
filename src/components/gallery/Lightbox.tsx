@@ -63,7 +63,8 @@ export function Lightbox({ images, index, onIndexChange }: Props) {
         step(-1);
       } else if (event.key === "Tab") {
         // Simple focus trap over the dialog's own controls.
-        const focusables = panelRef.current?.querySelectorAll<HTMLElement>("button, a[href]");
+        const focusables =
+          panelRef.current?.querySelectorAll<HTMLElement>("button, a[href]");
         if (!focusables?.length) return;
         const list = Array.from(focusables);
         const first = list[0];
@@ -125,7 +126,15 @@ export function Lightbox({ images, index, onIndexChange }: Props) {
                 aria-label={tc("close")}
                 className="inline-flex size-11 items-center justify-center rounded-full text-white transition-colors hover:bg-white/15"
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                >
                   <path d="M6 6l12 12M18 6L6 18" />
                 </svg>
               </button>
@@ -133,7 +142,11 @@ export function Lightbox({ images, index, onIndexChange }: Props) {
 
             <div className="relative flex min-h-0 flex-1 items-center justify-center px-2 sm:px-16">
               {images.length > 1 && (
-                <NavButton side="left" label={tc("previous")} onClick={() => step(-1)} />
+                <NavButton
+                  side="left"
+                  label={tc("previous")}
+                  onClick={() => step(-1)}
+                />
               )}
 
               <AnimatePresence mode="wait">

@@ -7,8 +7,7 @@ export function haversineKm(a: [number, number], b: [number, number]): number {
   const lat1 = toRad(a[0]);
   const lat2 = toRad(b[0]);
   const h =
-    Math.sin(dLat / 2) ** 2 +
-    Math.sin(dLng / 2) ** 2 * Math.cos(lat1) * Math.cos(lat2);
+    Math.sin(dLat / 2) ** 2 + Math.sin(dLng / 2) ** 2 * Math.cos(lat1) * Math.cos(lat2);
   return 2 * R * Math.asin(Math.sqrt(h));
 }
 

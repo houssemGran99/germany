@@ -26,7 +26,7 @@ export async function ThemeGrid() {
             href={{ pathname: "/destinations", query: { theme: item.id } }}
             className="group block h-full focus-visible:outline-none"
           >
-            <article className="relative h-full overflow-hidden rounded-3xl bg-surface-2 shadow-soft-sm transition-shadow duration-500 group-hover:shadow-soft-lg group-focus-visible:ring-2 group-focus-visible:ring-accent group-focus-visible:ring-offset-3 group-focus-visible:ring-offset-bg">
+            <article className="bg-surface-2 shadow-soft-sm group-hover:shadow-soft-lg group-focus-visible:ring-accent group-focus-visible:ring-offset-bg relative h-full overflow-hidden rounded-3xl transition-shadow duration-500 group-focus-visible:ring-2 group-focus-visible:ring-offset-3">
               <div className="relative aspect-16/11 w-full overflow-hidden">
                 <SmartImage
                   photoId={item.photoId}
@@ -38,7 +38,7 @@ export async function ThemeGrid() {
                   aria-hidden="true"
                   className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"
                 />
-                <span className="absolute top-4 right-4 rounded-full bg-white/15 px-3 py-1 text-2xs font-medium text-white backdrop-blur-md">
+                <span className="text-2xs absolute top-4 right-4 rounded-full bg-white/15 px-3 py-1 font-medium text-white backdrop-blur-md">
                   {t("count", { count: item.count })}
                 </span>
               </div>
@@ -55,12 +55,14 @@ export async function ThemeGrid() {
                     strokeWidth="1.8"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="translate-x-0 text-accent opacity-0 transition-all duration-400 group-hover:translate-x-1 group-hover:opacity-100"
+                    className="text-accent translate-x-0 opacity-0 transition-all duration-400 group-hover:translate-x-1 group-hover:opacity-100"
                   >
                     <path d="M5 12h14M13 6l6 6-6 6" />
                   </svg>
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-muted">{item.blurb}</p>
+                <p className="text-ink-muted mt-2 text-sm leading-relaxed">
+                  {item.blurb}
+                </p>
               </div>
             </article>
           </Link>

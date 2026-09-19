@@ -29,12 +29,12 @@ export function SeasonSection({ seasons }: { seasons: SeasonView[] }) {
   return (
     <div
       style={{ ["--season" as string]: active.accent[0] }}
-      className="overflow-hidden rounded-4xl border border-line bg-surface transition-colors duration-700"
+      className="border-line bg-surface overflow-hidden rounded-4xl border transition-colors duration-700"
     >
       <div
         role="tablist"
         aria-label={t("selectSeason")}
-        className="no-scrollbar flex gap-1 overflow-x-auto border-b border-line p-2"
+        className="no-scrollbar border-line flex gap-1 overflow-x-auto border-b p-2"
       >
         {seasons.map((season) => {
           const isActive = season.id === activeId;
@@ -57,7 +57,10 @@ export function SeasonSection({ seasons }: { seasons: SeasonView[] }) {
                   layoutId="season-pill"
                   transition={{ duration: reduce ? 0 : 0.45, ease: [0.16, 1, 0.3, 1] }}
                   className="absolute inset-0 rounded-full"
-                  style={{ backgroundColor: "color-mix(in oklab, var(--season) 18%, transparent)" }}
+                  style={{
+                    backgroundColor:
+                      "color-mix(in oklab, var(--season) 18%, transparent)",
+                  }}
                 />
               )}
               <span className="relative">{season.name}</span>
@@ -92,7 +95,7 @@ export function SeasonSection({ seasons }: { seasons: SeasonView[] }) {
           </AnimatePresence>
           <div
             aria-hidden="true"
-            className="absolute inset-0 mix-blend-multiply opacity-25 transition-colors duration-700"
+            className="absolute inset-0 opacity-25 mix-blend-multiply transition-colors duration-700"
             style={{ backgroundColor: "var(--season)" }}
           />
         </div>
@@ -107,15 +110,19 @@ export function SeasonSection({ seasons }: { seasons: SeasonView[] }) {
               transition={{ duration: reduce ? 0.15 : 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
               <p
-                className="mb-3 text-2xs font-semibold tracking-[0.2em] uppercase"
-                style={{ color: "color-mix(in oklab, var(--season) 75%, var(--color-ink))" }}
+                className="text-2xs mb-3 font-semibold tracking-[0.2em] uppercase"
+                style={{
+                  color: "color-mix(in oklab, var(--season) 75%, var(--color-ink))",
+                }}
               >
                 {active.months}
               </p>
               <h3 className="text-3xl">{active.name}</h3>
-              <p className="mt-4 text-base leading-relaxed text-ink-muted">{active.blurb}</p>
+              <p className="text-ink-muted mt-4 text-base leading-relaxed">
+                {active.blurb}
+              </p>
 
-              <p className="mt-7 text-2xs font-semibold tracking-[0.2em] text-ink-faint uppercase">
+              <p className="text-2xs text-ink-faint mt-7 font-semibold tracking-[0.2em] uppercase">
                 {t("bestFor")}
               </p>
               <p className="mt-2 font-serif text-lg leading-snug">
@@ -124,10 +131,20 @@ export function SeasonSection({ seasons }: { seasons: SeasonView[] }) {
 
               <Link
                 href={{ pathname: "/destinations", query: { season: active.id } }}
-                className="mt-7 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-ink underline decoration-accent decoration-2 underline-offset-6 transition-colors hover:text-accent"
+                className="text-ink decoration-accent hover:text-accent mt-7 inline-flex min-h-11 items-center gap-2 text-sm font-medium underline decoration-2 underline-offset-6 transition-colors"
               >
                 {t("seeDestinations", { count: active.count })}
-                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  aria-hidden="true"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
               </Link>

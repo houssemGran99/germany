@@ -31,14 +31,14 @@ export function DestinationCard({
       href={`/destinations/${card.slug}`}
       className={cn(
         "group block focus-visible:outline-none",
-        "focus-visible:[&>div]:ring-2 focus-visible:[&>div]:ring-accent focus-visible:[&>div]:ring-offset-3 focus-visible:[&>div]:ring-offset-bg",
+        "focus-visible:[&>div]:ring-accent focus-visible:[&>div]:ring-offset-bg focus-visible:[&>div]:ring-2 focus-visible:[&>div]:ring-offset-3",
         className,
       )}
     >
       <div
         className={cn(
-          "relative w-full overflow-hidden rounded-3xl bg-surface-2 shadow-soft-sm",
-          "transition-shadow duration-500 group-hover:shadow-soft-lg",
+          "bg-surface-2 shadow-soft-sm relative w-full overflow-hidden rounded-3xl",
+          "group-hover:shadow-soft-lg transition-shadow duration-500",
           ratios[variant],
         )}
       >
@@ -55,7 +55,7 @@ export function DestinationCard({
         />
 
         <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-          <p className="mb-2 text-2xs font-semibold tracking-[0.18em] text-white/70 uppercase">
+          <p className="text-2xs mb-2 font-semibold tracking-[0.18em] text-white/70 uppercase">
             {card.regionName}
           </p>
           <h3 className="font-serif text-xl leading-tight text-white sm:text-2xl">

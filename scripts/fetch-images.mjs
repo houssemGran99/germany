@@ -74,7 +74,8 @@ async function resolveLeadImages(articles) {
     for (const article of group) {
       let title = article;
       // follow normalisation/redirect chains
-      for (let i = 0; i < 4 && normalised.has(title); i++) title = normalised.get(title);
+      for (let i = 0; i < 4 && normalised.has(title); i++)
+        title = normalised.get(title);
       const src = byTitle.get(title) ?? byTitle.get(article);
       if (src) result.set(article, src);
     }
@@ -134,9 +135,10 @@ async function downloadAndOptimise(id, url) {
       throw new Error(`download HTTP ${res.status}`);
     }
     const retryAfter = Number(res.headers.get("retry-after"));
-    const wait = Number.isFinite(retryAfter) && retryAfter > 0
-      ? retryAfter * 1000
-      : 2000 * 2 ** attempt;
+    const wait =
+      Number.isFinite(retryAfter) && retryAfter > 0
+        ? retryAfter * 1000
+        : 2000 * 2 ** attempt;
     console.log(`    rate limited, waiting ${Math.round(wait / 1000)}s…`);
     await sleep(wait);
   }
@@ -161,10 +163,7 @@ async function downloadAndOptimise(id, url) {
 }
 
 async function makeBlur(file) {
-  const buf = await sharp(file)
-    .resize({ width: 16 })
-    .webp({ quality: 40 })
-    .toBuffer();
+  const buf = await sharp(file).resize({ width: 16 }).webp({ quality: 40 }).toBuffer();
   return `data:image/webp;base64,${buf.toString("base64")}`;
 }
 
@@ -262,7 +261,11 @@ export const generatedPhotos: Photo[] = ${JSON.stringify(photos, null, 2)};
     console.log(`${failures.length} failures written to IMAGE-TODO.md`);
   } else {
     if (await exists(TODO_FILE)) {
-      await writeFile(TODO_FILE, "# Image TODOs\n\nNone — every photo fetched successfully.\n", "utf8");
+      await writeFile(
+        TODO_FILE,
+        "# Image TODOs\n\nNone — every photo fetched successfully.\n",
+        "utf8",
+      );
     }
     console.log("No failures.");
   }

@@ -8,7 +8,11 @@ import { ThemeGrid } from "@/components/home/ThemeGrid";
 import { SeasonSection, type SeasonView } from "@/components/home/SeasonSection";
 import { FactsStrip } from "@/components/home/FactsStrip";
 import { ClosingCTA } from "@/components/home/ClosingCTA";
-import { destinations, featuredDestinations, getDestination } from "@/data/destinations";
+import {
+  destinations,
+  featuredDestinations,
+  getDestination,
+} from "@/data/destinations";
 import { seasons } from "@/data/taxonomy";
 import { getPhoto } from "@/lib/photos";
 import { toCard } from "@/lib/view-models";

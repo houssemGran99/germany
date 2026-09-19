@@ -56,9 +56,6 @@ export function LinkButton({
   ...props
 }: LinkButtonProps) {
   return (
-    <Link
-      className={cn(base, variants[variant], sizes[size], className)}
-      {...props}
-    />
+    <Link className={cn(base, variants[variant], sizes[size], className)} {...props} />
   );
 }

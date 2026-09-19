@@ -53,7 +53,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: destination.tagline[l],
       url: `/${locale}/destinations/${slug}`,
       images: hero
-        ? [{ url: hero.src, width: hero.width, height: hero.height, alt: destination.name[l] }]
+        ? [
+            {
+              url: hero.src,
+              width: hero.width,
+              height: hero.height,
+              alt: destination.name[l],
+            },
+          ]
         : undefined,
     },
   };
@@ -135,7 +142,7 @@ export default async function DestinationPage({ params }: PageProps) {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-bg to-transparent"
+          className="from-bg absolute inset-x-0 bottom-0 h-32 bg-linear-to-t to-transparent"
         />
 
         <Container size="wide" className="relative pb-14 sm:pb-20">
@@ -143,13 +150,24 @@ export default async function DestinationPage({ params }: PageProps) {
             href="/destinations"
             className="mb-6 inline-flex min-h-11 items-center gap-2 text-sm text-white/75 transition-colors hover:text-white"
           >
-            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" className="rotate-180">
+            <svg
+              aria-hidden="true"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.9"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="rotate-180"
+            >
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
             {t("backToAll")}
           </Link>
 
-          <p className="mb-3 text-2xs font-semibold tracking-[0.25em] text-white/70 uppercase">
+          <p className="text-2xs mb-3 font-semibold tracking-[0.25em] text-white/70 uppercase">
             {region?.name[l]}
           </p>
           <h1 className="text-shadow-hero max-w-4xl text-5xl leading-[1] text-white">
@@ -185,8 +203,8 @@ export default async function DestinationPage({ params }: PageProps) {
                   key={i}
                   className={
                     i === 0
-                      ? "text-lg leading-[1.75] text-ink sm:text-xl"
-                      : "text-base leading-[1.8] text-ink-muted"
+                      ? "text-ink text-lg leading-[1.75] sm:text-xl"
+                      : "text-ink-muted text-base leading-[1.8]"
                   }
                 >
                   {paragraph}
@@ -199,8 +217,14 @@ export default async function DestinationPage({ params }: PageProps) {
             <InfoBlock title={t("highlights")}>
               <ul className="space-y-3">
                 {destination.highlights[l].map((item) => (
-                  <li key={item} className="flex gap-3 text-sm leading-relaxed text-ink-muted">
-                    <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
+                  <li
+                    key={item}
+                    className="text-ink-muted flex gap-3 text-sm leading-relaxed"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="bg-accent mt-2 size-1.5 shrink-0 rounded-full"
+                    />
                     {item}
                   </li>
                 ))}
@@ -218,14 +242,15 @@ export default async function DestinationPage({ params }: PageProps) {
             </InfoBlock>
 
             <InfoBlock title={t("gettingThere")}>
-              <p className="text-sm leading-relaxed text-ink-muted">
+              <p className="text-ink-muted text-sm leading-relaxed">
                 {destination.gettingThere[l]}
               </p>
             </InfoBlock>
 
             <InfoBlock title={t("coordinates")}>
-              <p className="font-mono text-sm text-ink-muted">
-                {destination.coords[0].toFixed(4)}° N, {destination.coords[1].toFixed(4)}° E
+              <p className="text-ink-muted font-mono text-sm">
+                {destination.coords[0].toFixed(4)}° N,{" "}
+                {destination.coords[1].toFixed(4)}° E
               </p>
             </InfoBlock>
           </Reveal>
@@ -234,9 +259,13 @@ export default async function DestinationPage({ params }: PageProps) {
 
       {/* --- Gallery ----------------------------------------------------- */}
       {galleryImages.length > 0 && (
-        <Section title={t("gallery")} containerSize="wide" className="bg-bg-subtle py-16 sm:py-20">
+        <Section
+          title={t("gallery")}
+          containerSize="wide"
+          className="bg-bg-subtle py-16 sm:py-20"
+        >
           <PhotoGrid images={galleryImages} layout="grid" />
-          <p className="mt-6 text-xs text-ink-faint">
+          <p className="text-ink-faint mt-6 text-xs">
             {tc("photoBy", {
               author: photos.map((p) => p.credit.author).join(", "),
             })}
@@ -288,8 +317,8 @@ export default async function DestinationPage({ params }: PageProps) {
 
 function InfoBlock({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="rounded-3xl border border-line bg-surface p-6 shadow-soft-sm sm:p-7">
-      <h2 className="mb-4 text-2xs font-semibold tracking-[0.2em] text-ink-faint uppercase">
+    <section className="border-line bg-surface shadow-soft-sm rounded-3xl border p-6 sm:p-7">
+      <h2 className="text-2xs text-ink-faint mb-4 font-semibold tracking-[0.2em] uppercase">
         {title}
       </h2>
       {children}

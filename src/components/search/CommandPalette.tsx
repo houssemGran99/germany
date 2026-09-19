@@ -85,7 +85,7 @@ function PaletteDialog({
       transition={{ duration: reduce ? 0.1 : 0.2 }}
     >
       <div
-        className="absolute inset-0 bg-forest-deep/50 backdrop-blur-sm"
+        className="bg-forest-deep/50 absolute inset-0 backdrop-blur-sm"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -98,10 +98,10 @@ function PaletteDialog({
         exit={{ opacity: 0, y: reduce ? 0 : -8, scale: reduce ? 1 : 0.98 }}
         transition={{ duration: reduce ? 0.1 : 0.28, ease: [0.16, 1, 0.3, 1] }}
         onKeyDown={onKeyDown}
-        className="relative w-full max-w-xl overflow-hidden rounded-3xl border border-line bg-surface shadow-soft-xl"
+        className="border-line bg-surface shadow-soft-xl relative w-full max-w-xl overflow-hidden rounded-3xl border"
       >
-        <div className="flex items-center gap-3 border-b border-line px-5">
-          <SearchIcon className="shrink-0 text-ink-faint" />
+        <div className="border-line flex items-center gap-3 border-b px-5">
+          <SearchIcon className="text-ink-faint shrink-0" />
           <input
             ref={inputRef}
             type="search"
@@ -116,9 +116,9 @@ function PaletteDialog({
               setQuery(event.target.value);
               setActive(0);
             }}
-            className="h-16 w-full bg-transparent text-base outline-none placeholder:text-ink-faint"
+            className="placeholder:text-ink-faint h-16 w-full bg-transparent text-base outline-none"
           />
-          <kbd className="hidden shrink-0 rounded-md border border-line bg-surface-2 px-2 py-1 text-2xs text-ink-faint sm:block">
+          <kbd className="border-line bg-surface-2 text-2xs text-ink-faint hidden shrink-0 rounded-md border px-2 py-1 sm:block">
             ESC
           </kbd>
         </div>
@@ -144,26 +144,26 @@ function PaletteDialog({
                   )}
                 >
                   <span className="min-w-0 flex-1">
-                    <span className="block truncate text-sm font-medium text-ink">
+                    <span className="text-ink block truncate text-sm font-medium">
                       {item.name}
                     </span>
-                    <span className="block truncate text-xs text-ink-muted">
+                    <span className="text-ink-muted block truncate text-xs">
                       {item.region} · {item.themes.join(", ")}
                     </span>
                   </span>
-                  <ArrowIcon className="shrink-0 text-ink-faint" />
+                  <ArrowIcon className="text-ink-faint shrink-0" />
                 </button>
               </li>
             ))}
           </ul>
         ) : (
           <div className="px-5 py-10 text-center">
-            <p className="text-sm text-ink">{t("noResults", { query })}</p>
-            <p className="mt-1.5 text-xs text-ink-muted">{t("noResultsHint")}</p>
+            <p className="text-ink text-sm">{t("noResults", { query })}</p>
+            <p className="text-ink-muted mt-1.5 text-xs">{t("noResultsHint")}</p>
           </div>
         )}
 
-        <div className="hidden items-center gap-4 border-t border-line px-5 py-3 text-2xs text-ink-faint sm:flex">
+        <div className="border-line text-2xs text-ink-faint hidden items-center gap-4 border-t px-5 py-3 sm:flex">
           <Hint keys="↑ ↓" label={t("navigate")} />
           <Hint keys="↵" label={t("select")} />
           <Hint keys="esc" label={t("dismiss")} />
@@ -176,7 +176,9 @@ function PaletteDialog({
 function Hint({ keys, label }: { keys: string; label: string }) {
   return (
     <span className="flex items-center gap-1.5">
-      <kbd className="rounded border border-line bg-surface-2 px-1.5 py-0.5">{keys}</kbd>
+      <kbd className="border-line bg-surface-2 rounded border px-1.5 py-0.5">
+        {keys}
+      </kbd>
       {label}
     </span>
   );
@@ -184,7 +186,16 @@ function Hint({ keys, label }: { keys: string; label: string }) {
 
 function SearchIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+    <svg
+      className={className}
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    >
       <circle cx="11" cy="11" r="7" />
       <path d="m20 20-3.5-3.5" />
     </svg>
@@ -193,7 +204,17 @@ function SearchIcon({ className }: { className?: string }) {
 
 function ArrowIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      className={className}
+      width="15"
+      height="15"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="M5 12h14M13 6l6 6-6 6" />
     </svg>
   );

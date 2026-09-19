@@ -27,7 +27,9 @@ export default async function PlanPage({ params }: PageProps) {
     <Container size="wide" className="pt-30 pb-24 sm:pt-36">
       <header className="mb-12 max-w-2xl">
         <h1 className="text-4xl leading-[1.05]">{t("title")}</h1>
-        <p className="mt-5 text-base leading-relaxed text-ink-muted">{t("description")}</p>
+        <p className="text-ink-muted mt-5 text-base leading-relaxed">
+          {t("description")}
+        </p>
       </header>
 
       <TripPlanner cards={allCards(locale as Locale)} />

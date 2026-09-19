@@ -28,11 +28,11 @@ export function SaveToTripButton({ slug, variant = "solid", className }: Props) 
         "transition-all duration-300 active:scale-[0.98] disabled:opacity-60",
         variant === "onDark"
           ? saved
-            ? "bg-white text-forest-deep"
+            ? "text-forest-deep bg-white"
             : "border border-white/35 bg-white/12 text-white backdrop-blur-md hover:bg-white/22"
           : saved
             ? "bg-accent text-on-accent"
-            : "border border-line bg-surface text-ink hover:border-line-strong hover:bg-surface-2",
+            : "border-line bg-surface text-ink hover:border-line-strong hover:bg-surface-2 border",
         className,
       )}
     >
@@ -53,7 +53,15 @@ export function SaveToTripButton({ slug, variant = "solid", className }: Props) 
 
 function PlusIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+    >
       <path d="M12 5v14M5 12h14" />
     </svg>
   );
@@ -61,7 +69,16 @@ function PlusIcon() {
 
 function CheckIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="M4 12.5 9.5 18 20 6.5" />
     </svg>
   );
