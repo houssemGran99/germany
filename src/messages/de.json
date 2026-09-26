@@ -2,7 +2,7 @@
   "site": {
     "name": "Schönes Deutschland",
     "tagline": "Entdecke die Seele Deutschlands",
-    "description": "Ein immersiver Führer durch Deutschlands Burgen, Alpen, Wälder, Küsten und historische Städte — 16 Reiseziele, richtig erzählt."
+    "description": "Ein immersiver Führer durch Deutschlands Burgen, Alpen, Wälder, Küsten und historische Städte — 19 Reiseziele, richtig erzählt."
   },
   "nav": {
     "home": "Start",
@@ -89,7 +89,7 @@
     "clear": "Filter zurücksetzen",
     "resultCount": "{count, plural, =0 {Keine Orte} =1 {# Ort} other {# Orte}}",
     "emptyTitle": "Zu diesen Filtern passt nichts",
-    "emptyBody": "Erweitere die Jahreszeit oder entferne einen Filter — irgendwo hier sind sechzehn Orte.",
+    "emptyBody": "Erweitere die Jahreszeit oder entferne einen Filter — irgendwo hier sind neunzehn Orte.",
     "emptyAction": "Alle Filter zurücksetzen"
   },
   "detail": {
@@ -127,7 +127,7 @@
   },
   "regions": {
     "title": "Regionen Deutschlands",
-    "description": "Neun Regionen, sechzehn Reiseziele. Erkunde die Karte — oder die Liste darunter, wenn du lieber liest.",
+    "description": "Neun Regionen, neunzehn Reiseziele. Erkunde die Karte — oder die Liste darunter, wenn du lieber liest.",
     "mapLabel": "Interaktive Karte der Reiseziele in Deutschland. Die Liste darunter bietet eine tastaturzugängliche Alternative.",
     "listTitle": "Nach Region stöbern",
     "viewMap": "Karte",
@@ -159,7 +159,7 @@
   },
   "notFound": {
     "title": "Abseits der Karte",
-    "description": "Diese Seite gibt es nicht — sechzehn echte Orte schon. Probiere einen davon.",
+    "description": "Diese Seite gibt es nicht — neunzehn echte Orte schon. Probiere einen davon.",
     "home": "Zurück zum Start",
     "destinations": "Alle Reiseziele"
   },

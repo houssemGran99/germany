@@ -2,7 +2,7 @@
   "site": {
     "name": "Schönes Deutschland",
     "tagline": "Discover the soul of Germany",
-    "description": "An immersive guide to Germany's castles, alps, forests, coasts and historic cities — 16 destinations, told properly."
+    "description": "An immersive guide to Germany's castles, alps, forests, coasts and historic cities — 19 destinations, told properly."
   },
   "nav": {
     "home": "Home",
@@ -89,7 +89,7 @@
     "clear": "Clear filters",
     "resultCount": "{count, plural, =0 {No places} =1 {# place} other {# places}}",
     "emptyTitle": "Nothing matches those filters",
-    "emptyBody": "Try widening the season or clearing a filter — there are sixteen places in here somewhere.",
+    "emptyBody": "Try widening the season or clearing a filter — there are nineteen places in here somewhere.",
     "emptyAction": "Clear all filters"
   },
   "detail": {
@@ -127,7 +127,7 @@
   },
   "regions": {
     "title": "Regions of Germany",
-    "description": "Nine regions, sixteen destinations. Use the map to explore, or the list below if you would rather read.",
+    "description": "Nine regions, nineteen destinations. Use the map to explore, or the list below if you would rather read.",
     "mapLabel": "Interactive map of German destinations. Use the list below for a keyboard-accessible alternative.",
     "listTitle": "Browse by region",
     "viewMap": "Map",
@@ -159,7 +159,7 @@
   },
   "notFound": {
     "title": "Off the map",
-    "description": "This page does not exist — but sixteen real places do. Try one of those instead.",
+    "description": "This page does not exist — but nineteen real places do. Try one of those instead.",
     "home": "Back home",
     "destinations": "See all destinations"
   },

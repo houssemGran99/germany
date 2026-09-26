@@ -2,7 +2,9 @@
  * Photo manifest.
  *
  * Each entry maps a photo id (referenced from `src/data/destinations/*.ts`)
- * to an English Wikipedia article; the script pulls that article's lead image
+ * to a Wikipedia article; the script pulls that article's lead image
+ * (add `lang` to read a non-English edition, which occasionally has the
+ * better photo)
  * from Wikimedia Commons together with its author and licence, then downloads
  * and optimises it into `public/images/destinations/`.
  *
@@ -26,6 +28,20 @@ export const photoSources = [
   { id: "bamberg-hero", article: "Bamberg" },
   { id: "bamberg-2", article: "Bamberg Cathedral" },
   { id: "bamberg-3", article: "Michaelsberg Abbey, Bamberg" },
+
+  { id: "garmisch-partenkirchen-hero", article: "Garmisch-Partenkirchen" },
+  { id: "garmisch-partenkirchen-2", article: "Partnach Gorge" },
+  { id: "garmisch-partenkirchen-3", article: "Alpspitze" },
+
+  // The German article's lead photo of the Eibsee is far larger than the
+  // English one, which matters for a full-bleed hero.
+  { id: "eibsee-hero", article: "Eibsee", lang: "de" },
+  { id: "eibsee-2", article: "Eibsee" },
+  { id: "eibsee-3", article: "Zugspitze" },
+
+  { id: "fuessen-hero", article: "Füssen" },
+  { id: "fuessen-2", article: "St. Mang's Abbey, Füssen" },
+  { id: "fuessen-3", article: "Forggensee" },
 
   // --- Southwest -------------------------------------------------------
   { id: "black-forest-hero", article: "Black Forest" },

@@ -1,6 +1,6 @@
 # Schönes Deutschland
 
-An immersive, bilingual travel guide to Germany — sixteen destinations told with
+An immersive, bilingual travel guide to Germany — nineteen destinations told with
 large photography, long-form copy and calm motion. A static Next.js site: no
 backend, no CMS, no tracking.
 
@@ -24,29 +24,29 @@ Then open <http://localhost:3000> — you will be redirected to `/en`.
 
 ### Scripts
 
-| Script | What it does |
-| --- | --- |
-| `npm run dev` | Dev server on port 3000 |
-| `npm run build` | Production build (static export of every locale + destination) |
-| `npm start` | Serves the production build |
-| `npm run lint` | ESLint (`eslint-config-next`, flat config) |
-| `npm run typecheck` | `tsc --noEmit` |
-| `npm run format` | Prettier, including Tailwind class sorting |
-| `npm run images` | Fetches, credits and optimises the photography |
+| Script              | What it does                                                   |
+| ------------------- | -------------------------------------------------------------- |
+| `npm run dev`       | Dev server on port 3000                                        |
+| `npm run build`     | Production build (static export of every locale + destination) |
+| `npm start`         | Serves the production build                                    |
+| `npm run lint`      | ESLint (`eslint-config-next`, flat config)                     |
+| `npm run typecheck` | `tsc --noEmit`                                                 |
+| `npm run format`    | Prettier, including Tailwind class sorting                     |
+| `npm run images`    | Fetches, credits and optimises the photography                 |
 
 ---
 
 ## Tech
 
-| Concern | Choice |
-| --- | --- |
-| Framework | Next.js (App Router) + TypeScript |
-| Styling | Tailwind CSS v4, CSS-first design tokens |
-| Motion | Framer Motion (`motion/react`), reduced-motion aware throughout |
-| i18n | `next-intl` — English (default) and German under `/[locale]` |
-| Maps | Leaflet + react-leaflet, OpenStreetMap tiles (no API key) |
-| Images | `next/image`, locally optimised files, blur-up placeholders |
-| Content | Typed local data files — no database |
+| Concern   | Choice                                                          |
+| --------- | --------------------------------------------------------------- |
+| Framework | Next.js (App Router) + TypeScript                               |
+| Styling   | Tailwind CSS v4, CSS-first design tokens                        |
+| Motion    | Framer Motion (`motion/react`), reduced-motion aware throughout |
+| i18n      | `next-intl` — English (default) and German under `/[locale]`    |
+| Maps      | Leaflet + react-leaflet, OpenStreetMap tiles (no API key)       |
+| Images    | `next/image`, locally optimised files, blur-up placeholders     |
+| Content   | Typed local data files — no database                            |
 
 ---
 
@@ -105,16 +105,16 @@ src/
 Everything lives in `src/app/globals.css`: raw values on `:root` and
 `[data-theme="dark"]`, mapped into Tailwind through `@theme inline`.
 
-| Token group | Notes |
-| --- | --- |
-| `bg`, `bg-subtle`, `surface`, `surface-2` | Warm off-white → deep forest-black |
-| `ink`, `ink-muted`, `ink-faint` | Text, all AA or better on their surfaces |
-| `forest`, `forest-soft`, `forest-deep` | Brand colour for **text and accents** — flips light in dark mode |
-| `forest-block`, `on-forest-block` | Brand colour for **filled surfaces** — stays deep in both themes so text on top keeps contrast |
-| `accent`, `accent-bright`, `accent-soft`, `on-accent` | Amber, inspired by autumn light |
-| `line`, `line-strong` | Borders |
-| `--text-2xs … --text-6xl` | Fluid `clamp()` scale |
-| `--shadow-soft-*` | Layered shadows, retuned for dark mode |
+| Token group                                           | Notes                                                                                          |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `bg`, `bg-subtle`, `surface`, `surface-2`             | Warm off-white → deep forest-black                                                             |
+| `ink`, `ink-muted`, `ink-faint`                       | Text, all AA or better on their surfaces                                                       |
+| `forest`, `forest-soft`, `forest-deep`                | Brand colour for **text and accents** — flips light in dark mode                               |
+| `forest-block`, `on-forest-block`                     | Brand colour for **filled surfaces** — stays deep in both themes so text on top keeps contrast |
+| `accent`, `accent-bright`, `accent-soft`, `on-accent` | Amber, inspired by autumn light                                                                |
+| `line`, `line-strong`                                 | Borders                                                                                        |
+| `--text-2xs … --text-6xl`                             | Fluid `clamp()` scale                                                                          |
+| `--shadow-soft-*`                                     | Layered shadows, retuned for dark mode                                                         |
 
 Spacing follows an 8px rhythm (Tailwind's 4px scale in even steps). Cards use
 `rounded-3xl`; the header and overlays use the `.glass` utility.
@@ -149,11 +149,16 @@ variant has a single source of truth.
    ```
 
 2. **Add the photos.** Put the same ids in `scripts/photo-sources.mjs`, each
-   pointing at an English Wikipedia article whose lead image you want:
+   pointing at a Wikipedia article whose lead image you want:
 
    ```js
    { id: "spreewald-hero", article: "Spreewald" },
+   { id: "spreewald-2", article: "Spreewald", lang: "de" }, // other edition
    ```
+
+   `lang` defaults to `en`. Reach for it when another Wikipedia edition leads
+   with the better photo — the German article often carries a much larger one
+   for German subjects, which matters for a full-bleed hero.
 
 3. **Fetch them.** `npm run images` downloads the originals, records the
    photographer and licence from Wikimedia Commons, resizes to 2400px, writes

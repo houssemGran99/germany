@@ -55,33 +55,50 @@ function stripHtml(value) {
     .trim();
 }
 
-/** Resolve each article title to its lead image file name. */
-async function resolveLeadImages(articles) {
+/**
+ * Resolve each article title to its lead image file name, keyed by
+ * `lang:article`. Most entries use the English Wikipedia; a few name a
+ * different language because that edition's lead photo is the better one.
+ */
+async function resolveLeadImages(entries) {
   const result = new Map();
-  for (const group of chunk(articles, 20)) {
-    const titles = group.map(encodeURIComponent).join("%7C");
-    const data = await api(
-      `https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageimages&piprop=original&titles=${titles}`,
-    );
-    const normalised = new Map();
-    for (const n of data.query?.normalized ?? []) normalised.set(n.from, n.to);
-    for (const r of data.query?.redirects ?? []) normalised.set(r.from, r.to);
+  const byLang = new Map();
+  for (const { article, lang = "en" } of entries) {
+    if (!byLang.has(lang)) byLang.set(lang, new Set());
+    byLang.get(lang).add(article);
+  }
 
-    const byTitle = new Map();
-    for (const page of Object.values(data.query?.pages ?? {})) {
-      if (page.original?.source) byTitle.set(page.title, page.original.source);
+  for (const [lang, set] of byLang) {
+    for (const group of chunk([...set], 20)) {
+      await resolveGroup(lang, group, result);
+      await sleep(250);
     }
-    for (const article of group) {
-      let title = article;
-      // follow normalisation/redirect chains
-      for (let i = 0; i < 4 && normalised.has(title); i++)
-        title = normalised.get(title);
-      const src = byTitle.get(title) ?? byTitle.get(article);
-      if (src) result.set(article, src);
-    }
-    await sleep(250);
   }
   return result;
+}
+
+async function resolveGroup(lang, group, result) {
+  const titles = group.map(encodeURIComponent).join("%7C");
+  const data = await api(
+    `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageimages&piprop=original&titles=${titles}`,
+  );
+  const normalised = new Map();
+  for (const n of data.query?.normalized ?? []) normalised.set(n.from, n.to);
+  for (const r of data.query?.redirects ?? []) normalised.set(r.from, r.to);
+
+  const byTitle = new Map();
+  for (const page of Object.values(data.query?.pages ?? {})) {
+    if (page.original?.source) byTitle.set(page.title, page.original.source);
+  }
+  for (const article of group) {
+    let title = article;
+    // follow normalisation/redirect chains
+    for (let i = 0; i < 4 && normalised.has(title); i++) {
+      title = normalised.get(title);
+    }
+    const src = byTitle.get(title) ?? byTitle.get(article);
+    if (src) result.set(`${lang}:${article}`, src);
+  }
 }
 
 /** Fetch author + licence metadata for a set of Commons file titles. */
@@ -170,9 +187,8 @@ async function makeBlur(file) {
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
 
-  const articles = [...new Set(photoSources.map((p) => p.article))];
-  console.log(`Resolving ${articles.length} Wikipedia articles…`);
-  const leadImages = await resolveLeadImages(articles);
+  console.log(`Resolving ${photoSources.length} Wikipedia articles…`);
+  const leadImages = await resolveLeadImages(photoSources);
 
   const fileTitles = new Set();
   for (const url of leadImages.values()) {
@@ -185,8 +201,8 @@ async function main() {
   const photos = [];
   const failures = [];
 
-  for (const { id, article } of photoSources) {
-    const url = leadImages.get(article);
+  for (const { id, article, lang = "en" } of photoSources) {
+    const url = leadImages.get(`${lang}:${article}`);
     if (!url) {
       failures.push({ id, article, reason: "no lead image on the article" });
       continue;

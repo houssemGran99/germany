@@ -43,7 +43,7 @@ export const bavaria: Destination[] = [
       en: "Train to Füssen (via Munich or Augsburg), then bus 73/78 to Hohenschwangau — about 10 minutes. Tickets for the interior must be booked online in advance; the viewpoints are free.",
       de: "Bahn bis Füssen (über München oder Augsburg), dann Bus 73/78 nach Hohenschwangau — rund 10 Minuten. Tickets für die Innenräume müssen vorab online gebucht werden; die Aussichtspunkte sind frei zugänglich.",
     },
-    nearby: ["koenigssee", "rothenburg"],
+    nearby: ["fuessen", "eibsee", "koenigssee"],
     photos: ["neuschwanstein-hero", "neuschwanstein-2", "neuschwanstein-3"],
   },
   {
@@ -91,7 +91,7 @@ export const bavaria: Destination[] = [
       en: "Train to Berchtesgaden via Freilassing, then bus 841 to Königssee (about 10 minutes). Boats run year-round, weather permitting.",
       de: "Bahn nach Berchtesgaden über Freilassing, dann Bus 841 zum Königssee (etwa 10 Minuten). Die Boote fahren ganzjährig, wetterabhängig.",
     },
-    nearby: ["neuschwanstein", "lake-constance"],
+    nearby: ["garmisch-partenkirchen", "neuschwanstein", "lake-constance"],
     photos: ["koenigssee-hero", "koenigssee-2", "koenigssee-3"],
   },
   {
@@ -185,5 +185,142 @@ export const bavaria: Destination[] = [
     },
     nearby: ["rothenburg", "dresden"],
     photos: ["bamberg-hero", "bamberg-2", "bamberg-3"],
+  },
+  {
+    slug: "garmisch-partenkirchen",
+    name: { en: "Garmisch-Partenkirchen", de: "Garmisch-Partenkirchen" },
+    tagline: {
+      en: "Two villages, one Olympic town, and Germany's highest peak",
+      de: "Zwei Dörfer, eine Olympiastadt und Deutschlands höchster Gipfel",
+    },
+    region: "bavaria",
+    themes: ["alps", "cities"],
+    bestSeasons: ["summer", "winter"],
+    coords: [47.4917, 11.0955],
+    featured: true,
+    story: {
+      en: [
+        "Garmisch and Partenkirchen were two separate villages until 1935, when they were ordered to merge for the coming Winter Olympics. They have never entirely agreed to it. Partenkirchen, the older half, grew out of a Roman road station and still wears it: the Ludwigstraße is a single curving street of painted house fronts, Lüftlmalerei saints and trompe-l'œil windows, with the mountains closing the view at both ends. Garmisch, across the Partnach, is broader, newer and altogether more resort-like — and the hyphen between them is a local joke that refuses to die.",
+        "Above both rises the Zugspitze, at 2,962 metres the highest point in Germany, reached by a cog railway that tunnels up through the rock or a cable car that swings clear of it. On a clear morning the summit terrace looks out over four countries and something like four hundred peaks, with a glacier bowl below and the Eibsee sitting impossibly blue at the foot of the mountain.",
+        "But the best walk here costs nothing but a few euros and an hour. The Partnach Gorge is a 700-metre slot the river has cut 80 metres deep into the rock, followed on galleries and through dripping tunnels barely wide enough for two. In winter it freezes into columns and curtains of ice, lit blue by the sliver of sky overhead — one of those places that is genuinely better in February.",
+      ],
+      de: [
+        "Garmisch und Partenkirchen waren zwei getrennte Dörfer, bis 1935 ihre Zusammenlegung für die kommenden Olympischen Winterspiele angeordnet wurde. Einverstanden waren sie damit nie ganz. Partenkirchen, die ältere Hälfte, ging aus einer römischen Straßenstation hervor und trägt es bis heute: Die Ludwigstraße ist eine einzige geschwungene Gasse aus bemalten Hausfronten, Lüftlmalerei-Heiligen und Scheinfenstern, an beiden Enden von Bergen geschlossen. Garmisch, jenseits der Partnach, ist breiter, neuer und deutlich mondäner — und der Bindestrich dazwischen ist ein Ortswitz, der nicht sterben will.",
+        "Über beiden erhebt sich die Zugspitze, mit 2.962 Metern der höchste Punkt Deutschlands, erreichbar mit einer Zahnradbahn, die sich durch den Fels bohrt, oder einer Seilbahn, die frei daneben schwebt. An einem klaren Morgen blickt man von der Gipfelterrasse über vier Länder und gut vierhundert Gipfel, darunter ein Gletscherkar und der Eibsee, unmöglich blau am Fuß des Bergs.",
+        "Die schönste Wanderung kostet hier aber nur ein paar Euro und eine Stunde. Die Partnachklamm ist eine 700 Meter lange Schlucht, die der Fluss 80 Meter tief in den Fels geschnitten hat, begehbar auf Galerien und durch tropfende Tunnel, kaum breit genug für zwei. Im Winter gefriert sie zu Säulen und Vorhängen aus Eis, blau beleuchtet vom Himmelsstreifen darüber — einer jener Orte, die im Februar tatsächlich besser sind.",
+      ],
+    },
+    highlights: {
+      en: [
+        "The Partnach Gorge, ice-filled in winter",
+        "Zugspitze summit by cog railway or cable car",
+        "Painted house fronts along Partenkirchen's Ludwigstraße",
+        "The AlpspiX viewing platform over the Höllental",
+      ],
+      de: [
+        "Die Partnachklamm, im Winter voller Eis",
+        "Zugspitzgipfel mit Zahnradbahn oder Seilbahn",
+        "Bemalte Hausfassaden in der Partenkirchner Ludwigstraße",
+        "Die Aussichtsplattform AlpspiX über dem Höllental",
+      ],
+    },
+    gettingThere: {
+      en: "Direct regional trains from Munich take about 1h20. Everything in town is walkable; the Zugspitze cog railway leaves from its own platform beside the main station.",
+      de: "Direkte Regionalzüge ab München brauchen rund 1:20 Stunden. Im Ort ist alles zu Fuß erreichbar; die Zugspitzbahn fährt von einem eigenen Bahnsteig neben dem Hauptbahnhof.",
+    },
+    nearby: ["eibsee", "neuschwanstein", "koenigssee"],
+    photos: [
+      "garmisch-partenkirchen-hero",
+      "garmisch-partenkirchen-2",
+      "garmisch-partenkirchen-3",
+    ],
+  },
+  {
+    slug: "eibsee",
+    name: { en: "Lake Eibsee", de: "Eibsee" },
+    tagline: {
+      en: "Turquoise water and eight small islands under the Zugspitze",
+      de: "Türkises Wasser und acht kleine Inseln unter der Zugspitze",
+    },
+    region: "bavaria",
+    themes: ["alps", "forests"],
+    bestSeasons: ["summer", "autumn"],
+    coords: [47.4575, 10.9789],
+    story: {
+      en: [
+        "Roughly three and a half thousand years ago a vast slab of the Zugspitze massif let go and came down into the valley. The rubble dammed the meltwater and left behind a lake of exceptional clarity, scattered with eight small wooded islands and a handful of bays shallow enough that the limestone floor glows through. That is why the Eibsee is the colour it is — not glacial flour, but pale rock under very clean water, turning from jade at the shore to deep blue-green in the middle.",
+        "A path of just under eight kilometres runs all the way around, mostly level, mostly through spruce and beech, and it is one of the great easy walks in the Alps. Every few hundred metres the trees open and the Zugspitze's north face stands up out of the water — two thousand metres of grey limestone directly above you, with the cable car cabins crossing the sky like slow insects. Bring a swimsuit: the water tops out around 20 °C in August and is shockingly clear on the way in.",
+        "Go early. By eleven the car park is full and the eastern shore has someone on every rock; by seven in the morning there is mist coming off the surface, nobody on the path and the whole mountain reflected without a ripple. Autumn is the other secret — larch and beech turning gold against black conifer, and the first snow on the summit while the shore is still warm.",
+      ],
+      de: [
+        "Vor rund dreieinhalbtausend Jahren löste sich eine gewaltige Platte des Zugspitzmassivs und stürzte ins Tal. Der Schutt staute das Schmelzwasser und hinterließ einen See von außergewöhnlicher Klarheit, übersät mit acht kleinen bewaldeten Inseln und einigen Buchten, die so flach sind, dass der Kalksteingrund durchleuchtet. Daher die Farbe des Eibsees — kein Gletschermehl, sondern heller Fels unter sehr sauberem Wasser, von Jade am Ufer bis zu tiefem Blaugrün in der Mitte.",
+        "Ein knapp acht Kilometer langer Weg führt einmal herum, weitgehend eben, weitgehend durch Fichten und Buchen, und er gehört zu den schönsten leichten Wanderungen der Alpen. Alle paar hundert Meter öffnen sich die Bäume, und die Zugspitz-Nordwand steht aus dem Wasser auf — zweitausend Meter grauer Kalk direkt über einem, während die Seilbahnkabinen wie träge Insekten den Himmel queren. Badesachen mitnehmen: Im August erreicht das Wasser rund 20 °C und ist beim Hineingehen erschreckend klar.",
+        "Früh kommen. Um elf ist der Parkplatz voll und auf jedem Felsen am Ostufer sitzt jemand; um sieben Uhr morgens steigt Nebel von der Oberfläche, niemand ist auf dem Weg, und der ganze Berg spiegelt sich ohne eine Welle. Der Herbst ist das andere Geheimnis — Lärchen und Buchen in Gold vor schwarzen Nadelbäumen und der erste Schnee auf dem Gipfel, während das Ufer noch warm ist.",
+      ],
+    },
+    highlights: {
+      en: [
+        "The 7.5 km shore loop under the Zugspitze north face",
+        "Swimming off the shallow bays in late summer",
+        "Rowing boats out to the wooded islands",
+        "The Zugspitze cable car, which leaves from the lakeshore",
+      ],
+      de: [
+        "Der 7,5 km lange Uferweg unter der Zugspitz-Nordwand",
+        "Baden in den flachen Buchten im Spätsommer",
+        "Ruderboote hinaus zu den bewaldeten Inseln",
+        "Die Seilbahn Zugspitze, die direkt am Ufer startet",
+      ],
+    },
+    gettingThere: {
+      en: "Take the Zugspitze cog railway from Garmisch-Partenkirchen to Eibsee, about 35 minutes — no car needed, and the lake is a two-minute walk from the platform.",
+      de: "Mit der Zugspitzbahn von Garmisch-Partenkirchen bis Eibsee, rund 35 Minuten — ein Auto ist unnötig, und der See liegt zwei Gehminuten vom Bahnsteig entfernt.",
+    },
+    nearby: ["garmisch-partenkirchen", "neuschwanstein", "fuessen"],
+    photos: ["eibsee-hero", "eibsee-2", "eibsee-3"],
+  },
+  {
+    slug: "fuessen",
+    name: { en: "Füssen", de: "Füssen" },
+    tagline: {
+      en: "Where the Romantic Road runs out of Germany",
+      de: "Wo die Romantische Straße aus Deutschland hinausläuft",
+    },
+    region: "bavaria",
+    themes: ["cities", "castles"],
+    bestSeasons: ["spring", "autumn"],
+    coords: [47.5713, 10.7016],
+    story: {
+      en: [
+        "Most people treat Füssen as a car park for Neuschwanstein, which is their loss. This is the highest town in Bavaria, built where the Roman Via Claudia Augusta crossed the Lech on its way to Augsburg, and for three centuries it was the lute-making capital of Europe — the first violin makers' guild anywhere was founded here in 1562. The old town is a pocket-sized grid of pastel houses, arcades and quiet courtyards that empties completely once the afternoon coaches leave.",
+        "Above it stands the Hohes Schloss, summer residence of the bishops of Augsburg and one of the strangest façades in Germany: the whole courtyard is painted in trompe-l'œil, with fake oriels, fake shutters and fake stonework convincing enough that you have to touch the wall to be sure. Below it the white bulk of St Mang's Abbey drops down to the river, its baroque library reached through a Romanesque crypt a thousand years older.",
+        "Then there is the water. The Lech comes out of the Alps here through a narrow limestone gorge at the Lechfall, turquoise and loud, five minutes' walk from the market square. North of town it slows into the Forggensee, a reservoir big enough for passenger boats in summer and drained every autumn, revealing the old riverbed and the line of a Roman road underneath.",
+      ],
+      de: [
+        "Die meisten behandeln Füssen als Parkplatz für Neuschwanstein, was ihr Verlust ist. Dies ist die höchstgelegene Stadt Bayerns, errichtet dort, wo die römische Via Claudia Augusta auf dem Weg nach Augsburg den Lech querte, und drei Jahrhunderte lang war sie Europas Hauptstadt des Lautenbaus — die weltweit erste Geigenbauerzunft wurde hier 1562 gegründet. Die Altstadt ist ein Raster im Westentaschenformat aus pastellfarbenen Häusern, Arkaden und stillen Höfen, das sich vollständig leert, sobald am Nachmittag die Busse abfahren.",
+        "Darüber steht das Hohe Schloss, Sommerresidenz der Augsburger Bischöfe und eine der seltsamsten Fassaden Deutschlands: Der gesamte Innenhof ist in Trompe-l'œil bemalt, mit falschen Erkern, falschen Läden und falschem Mauerwerk, überzeugend genug, dass man die Wand berühren muss, um sicher zu sein. Darunter fällt der weiße Block des Klosters St. Mang zum Fluss ab; seine barocke Bibliothek erreicht man durch eine romanische Krypta, die tausend Jahre älter ist.",
+        "Und dann ist da das Wasser. Der Lech tritt hier durch eine schmale Kalksteinschlucht am Lechfall aus den Alpen, türkis und laut, fünf Gehminuten vom Marktplatz. Nördlich der Stadt verlangsamt er sich zum Forggensee, einem Stausee, groß genug für Ausflugsschiffe im Sommer und jeden Herbst abgelassen — dann kommen das alte Flussbett und die Spur einer Römerstraße darunter zum Vorschein.",
+      ],
+    },
+    highlights: {
+      en: [
+        "The painted trompe-l'œil courtyard of the Hohes Schloss",
+        "St Mang's Abbey, its baroque library and Romanesque crypt",
+        "The Lechfall gorge, five minutes from the market square",
+        "Boat trips on the Forggensee in summer",
+      ],
+      de: [
+        "Der in Trompe-l'œil bemalte Innenhof des Hohen Schlosses",
+        "Kloster St. Mang mit barocker Bibliothek und romanischer Krypta",
+        "Die Lechfall-Schlucht, fünf Minuten vom Marktplatz",
+        "Schifffahrten auf dem Forggensee im Sommer",
+      ],
+    },
+    gettingThere: {
+      en: "Füssen is the end of the line from Munich via Buchloe — about two hours, with no change on most services. Neuschwanstein is ten minutes away by bus 73 or 78.",
+      de: "Füssen ist Endstation der Strecke ab München über Buchloe — rund zwei Stunden, bei den meisten Verbindungen ohne Umstieg. Neuschwanstein liegt zehn Minuten entfernt mit Bus 73 oder 78.",
+    },
+    nearby: ["neuschwanstein", "eibsee", "rothenburg"],
+    photos: ["fuessen-hero", "fuessen-2", "fuessen-3"],
   },
 ];

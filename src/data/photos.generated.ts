@@ -174,6 +174,132 @@ export const generatedPhotos: Photo[] = [
     }
   },
   {
+    "id": "garmisch-partenkirchen-hero",
+    "src": "/images/destinations/garmisch-partenkirchen-hero.jpg",
+    "width": 2400,
+    "height": 1600,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAsAA4BaJaACdADZY7RoAAD+3OSKO47EzTxVCS5eLDyiHzw8/44/U8GbSho84F8rEhniLFbexIGi2YfohUzEAAA=",
+    "credit": {
+      "author": "Octagon",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garmisch-Partenkirchen.JPG",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "garmisch-partenkirchen-2",
+    "src": "/images/destinations/garmisch-partenkirchen-2.jpg",
+    "width": 1000,
+    "height": 600,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAoAA4BaJZwAAldUBs/3gAD+9evHKQUSgzJzplM3ss3ime3bCRv104SVkHXlXbHnBqc9R4Od/OwShkwAAA==",
+    "credit": {
+      "author": "Richard Bartz, Munich Makro Freak",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Partnachklamm.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "garmisch-partenkirchen-3",
+    "src": "/images/destinations/garmisch-partenkirchen-3.jpg",
+    "width": 2400,
+    "height": 1800,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAwAA4BaJYwCw7EDeWTzmyRWrAD+88k8gn7OVWlIUTF2ktH+Lu0XLMy+9MaQ2XF8tzTInc5pbBpGS5AAm3DDFicqwTOXj1QAAA==",
+    "credit": {
+      "author": "Günter Seggebäing",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpspitze_(Wetterstein).jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "eibsee-hero",
+    "src": "/images/destinations/eibsee-hero.jpg",
+    "width": 2400,
+    "height": 1586,
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAA4BaJagCdAEOpZEyEAAA/pG/gCKQcwU9TynUOCXE78u1B6NxcaA/sETSFrnVQJ0qZW9FGVwaAAA=",
+    "credit": {
+      "author": "Octagon",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eibsee_und_Ammergauer_Alpen.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "eibsee-2",
+    "src": "/images/destinations/eibsee-2.jpg",
+    "width": 1024,
+    "height": 768,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAwAA4BaJZgCdAEQEno8cAAA/tUWcMa/YjSq6f7GeY/6aHrhq/6Yq8r7pP5pHbveWPShAQAAAA==",
+    "credit": {
+      "author": "Nixalsverdruss",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Eibseeblick2.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eibseeblick2.jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "eibsee-3",
+    "src": "/images/destinations/eibsee-3.jpg",
+    "width": 2400,
+    "height": 1600,
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsAA4BaJbACdAD0ZlP2nOAAAP7kCr8zFd0sutzTA8rp7vBTwriJ9HlYSJZ+64vfXEDFQP57zDoJttb3TJjRVrnenDKi+yc0x2/gAAA=",
+    "credit": {
+      "author": "Octagon",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zugspitze_2.JPG",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "fuessen-hero",
+    "src": "/images/destinations/fuessen-hero.jpg",
+    "width": 2400,
+    "height": 1800,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAwAA4BaJZQC7AC4NP3eEAD+vZKEgeWvSFdFhebxZGEyNzciVtXiTZZHqNKW6PFwXto3pNDrX618s8OIc8hCP6SXmoLD+AAAAA==",
+    "credit": {
+      "author": "Wolkenkratzer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:F%C3%BCssen_-.JPG",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "fuessen-2",
+    "src": "/images/destinations/fuessen-2.jpg",
+    "width": 2400,
+    "height": 2400,
+    "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQAgCdASoQABAAA4BaJaACdAYtpzVI7B1oAM2mna8qbENLWvT1EeVwyH+et1Sc018Rizhv+okj5Adx9vsig85LANVQRdH/0skfYAT5NIN4gJm9gh/Ignk7atQs/fzJboJPeVgmM0rEl2f4J6qxFVlvbWvAD33SWLgAAA==",
+    "credit": {
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Abbey_of_Saint_Mang_(view_from_the_southwest).jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
+    "id": "fuessen-3",
+    "src": "/images/destinations/fuessen-3.jpg",
+    "width": 2400,
+    "height": 1680,
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAsAA4BaJagCdAEN8JfZxwAA/lvXQJ3+4q3gkIkqvRiNkZTsftQSc3vRaPgW71E0tXCQXRfpbgAOOsni9HeRU54AAA==",
+    "credit": {
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Forggensee_(view_from_the_southwest).jpg",
+      "source": "Wikimedia Commons"
+    }
+  },
+  {
     "id": "black-forest-hero",
     "src": "/images/destinations/black-forest-hero.jpg",
     "width": 2400,
